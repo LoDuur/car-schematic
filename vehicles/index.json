@@ -1,0 +1,5 @@
+{
+  "vehicles": [
+    { "id": "bmw-e60", "make": "BMW", "model": "5 Series", "generation": "E60 / E61", "path": "bmw/e60" }
+  ]
+}

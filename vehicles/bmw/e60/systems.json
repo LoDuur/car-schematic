@@ -1,0 +1,337 @@
+{
+  "systems": [
+    {
+      "id": "engine",
+      "name": {
+        "en": "Engine",
+        "lv": "Dzinējs",
+        "ru": "Двигатель"
+      }
+    },
+    {
+      "id": "intake",
+      "name": {
+        "en": "Air intake and charging",
+        "lv": "Gaisa ieplūde un uzpūte",
+        "ru": "Впуск и наддув"
+      }
+    },
+    {
+      "id": "fuel",
+      "name": {
+        "en": "Fuel system",
+        "lv": "Degvielas sistēma",
+        "ru": "Топливная система"
+      }
+    },
+    {
+      "id": "ignition",
+      "name": {
+        "en": "Ignition and glow",
+        "lv": "Aizdedze un kvēle",
+        "ru": "Зажигание и накаливание"
+      }
+    },
+    {
+      "id": "cooling",
+      "name": {
+        "en": "Cooling",
+        "lv": "Dzesēšana",
+        "ru": "Охлаждение"
+      }
+    },
+    {
+      "id": "exhaust",
+      "name": {
+        "en": "Exhaust and emissions",
+        "lv": "Izplūde un izmeši",
+        "ru": "Выпуск и экология"
+      }
+    },
+    {
+      "id": "driveline",
+      "name": {
+        "en": "Transmission and driveline",
+        "lv": "Transmisija",
+        "ru": "Трансмиссия"
+      }
+    },
+    {
+      "id": "brakes",
+      "name": {
+        "en": "Brakes",
+        "lv": "Bremzes",
+        "ru": "Тормоза"
+      }
+    },
+    {
+      "id": "suspension",
+      "name": {
+        "en": "Suspension",
+        "lv": "Piekare",
+        "ru": "Подвеска"
+      }
+    },
+    {
+      "id": "steering",
+      "name": {
+        "en": "Steering",
+        "lv": "Stūrēšana",
+        "ru": "Рулевое управление"
+      }
+    },
+    {
+      "id": "electrical",
+      "name": {
+        "en": "Electrical",
+        "lv": "Elektrosistēma",
+        "ru": "Электрооборудование"
+      }
+    }
+  ],
+  "assemblies": [
+    {
+      "id": "engine-core",
+      "systemId": "engine",
+      "name": {
+        "en": "Engine core",
+        "lv": "Dzinēja pamatdaļa",
+        "ru": "Основа двигателя"
+      }
+    },
+    {
+      "id": "valve-control",
+      "systemId": "engine",
+      "name": {
+        "en": "Valve control",
+        "lv": "Vārstu vadība",
+        "ru": "Управление клапанами"
+      }
+    },
+    {
+      "id": "lubrication",
+      "systemId": "engine",
+      "name": {
+        "en": "Lubrication",
+        "lv": "Eļļošana",
+        "ru": "Смазка"
+      }
+    },
+    {
+      "id": "engine-electronics",
+      "systemId": "engine",
+      "name": {
+        "en": "Engine electronics",
+        "lv": "Dzinēja elektronika",
+        "ru": "Электроника двигателя"
+      }
+    },
+    {
+      "id": "accessory-drive",
+      "systemId": "engine",
+      "name": {
+        "en": "Accessory drive",
+        "lv": "Palīgagregātu piedziņa",
+        "ru": "Привод навесного оборудования"
+      }
+    },
+    {
+      "id": "air-supply",
+      "systemId": "intake",
+      "name": {
+        "en": "Air supply",
+        "lv": "Gaisa padeve",
+        "ru": "Подача воздуха"
+      }
+    },
+    {
+      "id": "charging",
+      "systemId": "intake",
+      "name": {
+        "en": "Forced induction",
+        "lv": "Uzpūte",
+        "ru": "Наддув"
+      }
+    },
+    {
+      "id": "fuel-storage",
+      "systemId": "fuel",
+      "name": {
+        "en": "Fuel storage and supply",
+        "lv": "Degvielas glabāšana un padeve",
+        "ru": "Хранение и подача топлива"
+      }
+    },
+    {
+      "id": "injection",
+      "systemId": "fuel",
+      "name": {
+        "en": "Injection",
+        "lv": "Iesmidzināšana",
+        "ru": "Впрыск"
+      }
+    },
+    {
+      "id": "radiator-module",
+      "systemId": "cooling",
+      "name": {
+        "en": "Radiator module",
+        "lv": "Radiatora modulis",
+        "ru": "Радиаторный модуль"
+      }
+    },
+    {
+      "id": "coolant-circuit",
+      "systemId": "cooling",
+      "name": {
+        "en": "Coolant circuit",
+        "lv": "Dzesēšanas kontūrs",
+        "ru": "Контур охлаждения"
+      }
+    },
+    {
+      "id": "exhaust-piping",
+      "systemId": "exhaust",
+      "name": {
+        "en": "Exhaust piping",
+        "lv": "Izplūdes caurules",
+        "ru": "Выпускной тракт"
+      }
+    },
+    {
+      "id": "aftertreatment",
+      "systemId": "exhaust",
+      "name": {
+        "en": "Emission control",
+        "lv": "Izmešu kontrole",
+        "ru": "Очистка выхлопа"
+      }
+    },
+    {
+      "id": "gearbox",
+      "systemId": "driveline",
+      "name": {
+        "en": "Gearbox",
+        "lv": "Ātrumkārba",
+        "ru": "Коробка передач"
+      }
+    },
+    {
+      "id": "shafts",
+      "systemId": "driveline",
+      "name": {
+        "en": "Drive shafts",
+        "lv": "Piedziņas vārpstas",
+        "ru": "Валы привода"
+      }
+    },
+    {
+      "id": "final-drives",
+      "systemId": "driveline",
+      "name": {
+        "en": "Differentials",
+        "lv": "Diferenciāļi",
+        "ru": "Дифференциалы"
+      }
+    },
+    {
+      "id": "wheel-brakes",
+      "systemId": "brakes",
+      "name": {
+        "en": "Wheel brakes",
+        "lv": "Riteņu bremzes",
+        "ru": "Колёсные тормоза"
+      }
+    },
+    {
+      "id": "brake-hydraulics",
+      "systemId": "brakes",
+      "name": {
+        "en": "Brake hydraulics",
+        "lv": "Bremžu hidraulika",
+        "ru": "Тормозная гидравлика"
+      }
+    },
+    {
+      "id": "front-axle",
+      "systemId": "suspension",
+      "name": {
+        "en": "Front axle",
+        "lv": "Priekšējā ass",
+        "ru": "Передняя ось"
+      }
+    },
+    {
+      "id": "rear-axle",
+      "systemId": "suspension",
+      "name": {
+        "en": "Rear axle",
+        "lv": "Aizmugurējā ass",
+        "ru": "Задняя ось"
+      }
+    },
+    {
+      "id": "wheels",
+      "systemId": "suspension",
+      "name": {
+        "en": "Wheels",
+        "lv": "Riteņi",
+        "ru": "Колёса"
+      }
+    },
+    {
+      "id": "steering-gear",
+      "systemId": "steering",
+      "name": {
+        "en": "Steering gear",
+        "lv": "Stūres mehānisms",
+        "ru": "Рулевой механизм"
+      }
+    },
+    {
+      "id": "steering-controls",
+      "systemId": "steering",
+      "name": {
+        "en": "Steering controls",
+        "lv": "Stūrēšanas vadība",
+        "ru": "Органы рулевого управления"
+      }
+    },
+    {
+      "id": "power-supply",
+      "systemId": "electrical",
+      "name": {
+        "en": "Power supply and starting",
+        "lv": "Barošana un iedarbināšana",
+        "ru": "Электропитание и пуск"
+      }
+    },
+    {
+      "id": "body-electronics",
+      "systemId": "electrical",
+      "name": {
+        "en": "Body electronics",
+        "lv": "Virsbūves elektronika",
+        "ru": "Электроника кузова"
+      }
+    },
+    {
+      "id": "ignition-system",
+      "systemId": "ignition",
+      "name": {
+        "en": "Spark ignition",
+        "lv": "Dzirksteļaizdedze",
+        "ru": "Искровое зажигание"
+      }
+    },
+    {
+      "id": "glow-system",
+      "systemId": "ignition",
+      "name": {
+        "en": "Diesel glow system",
+        "lv": "Dīzeļa kvēlsistēma",
+        "ru": "Система накаливания"
+      }
+    }
+  ]
+}

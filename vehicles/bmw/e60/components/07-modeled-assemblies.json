@@ -1,0 +1,737 @@
+{
+  "components": [
+    {
+      "id": "accessory-belt-drive",
+      "systemId": "engine",
+      "assemblyId": "accessory-drive",
+      "name": {
+        "en": "Accessory belt drive",
+        "lv": "Palīgagregātu siksnas piedziņa",
+        "ru": "Ремённый привод навесного оборудования"
+      },
+      "aliases": [
+        "serpentine belt",
+        "drive belt",
+        "tensioner",
+        "idler pulley",
+        "vibration damper",
+        "поликлиновой ремень",
+        "натяжитель",
+        "dzensiksna"
+      ],
+      "symptomIds": [
+        "belt-noise"
+      ],
+      "function": {
+        "en": "Crankshaft pulley, belt, tensioner and idler that drive the alternator and power steering pump.",
+        "lv": "Kloķvārpstas skriemelis, siksna, spriegotājs un vadrullis, kas dzen ģeneratoru un stūres pastiprinātāja sūkni.",
+        "ru": "Шкив коленвала, ремень, натяжитель и обводной ролик, приводящие генератор и насос ГУР."
+      },
+      "location": {
+        "en": "Front face of the engine.",
+        "lv": "Dzinēja priekšpusē.",
+        "ru": "На передней стороне двигателя."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "engine-block"
+        },
+        {
+          "type": "drives",
+          "target": "alternator"
+        },
+        {
+          "type": "drives",
+          "target": "power-steering-pump"
+        },
+        {
+          "type": "drives",
+          "target": "coolant-pump",
+          "appliesWhen": {
+            "not": {
+              "axis": "engine",
+              "in": [
+                "N52B25",
+                "N52B30",
+                "N53B25",
+                "N53B30",
+                "N54B30"
+              ]
+            }
+          }
+        }
+      ],
+      "specs": [
+        {
+          "key": "belt-size",
+          "label": {
+            "en": "Belt size",
+            "lv": "Siksnas izmērs",
+            "ru": "Размер ремня"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "engine-mounts",
+      "systemId": "engine",
+      "assemblyId": "engine-core",
+      "name": {
+        "en": "Engine mounts",
+        "lv": "Dzinēja balsti",
+        "ru": "Опоры двигателя"
+      },
+      "aliases": [
+        "motor mounts",
+        "hydraulic mounts",
+        "подушки двигателя",
+        "dzinēja spilveni"
+      ],
+      "symptomIds": [
+        "idle-vibration",
+        "driveline-clunk"
+      ],
+      "function": {
+        "en": "Rubber or hydraulic mounts that carry the engine on the front axle carrier and absorb vibration.",
+        "lv": "Gumijas vai hidrauliskie balsti, kas notur dzinēju uz priekšējās ass rāmja un slāpē vibrācijas.",
+        "ru": "Резиновые или гидравлические опоры, держащие двигатель на переднем подрамнике и гасящие вибрации."
+      },
+      "location": {
+        "en": "Left and right of the engine block, on the front axle carrier.",
+        "lv": "Dzinēja bloka kreisajā un labajā pusē, uz priekšējās ass rāmja.",
+        "ru": "Слева и справа от блока, на переднем подрамнике."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "front-subframe"
+        },
+        {
+          "type": "connects",
+          "target": "engine-block"
+        }
+      ]
+    },
+    {
+      "id": "fuel-lines",
+      "systemId": "fuel",
+      "assemblyId": "fuel-storage",
+      "name": {
+        "en": "Fuel feed line",
+        "lv": "Degvielas padeves caurule",
+        "ru": "Топливопровод подачи"
+      },
+      "aliases": [
+        "fuel line",
+        "fuel pipe",
+        "топливная трубка",
+        "degvielas caurule"
+      ],
+      "symptomIds": [
+        "fuel-smell"
+      ],
+      "function": {
+        "en": "Carries fuel from the in-tank pump along the underbody to the engine.",
+        "lv": "Novada degvielu no sūkņa tvertnē gar grīdu līdz dzinējam.",
+        "ru": "Подаёт топливо от насоса в баке вдоль днища к двигателю."
+      },
+      "location": {
+        "en": "Along the underbody from the fuel tank to the engine bay.",
+        "lv": "Gar grīdu no degvielas tvertnes līdz motortelpai.",
+        "ru": "Вдоль днища от бака до моторного отсека."
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "fuel-injectors",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M54B22",
+              "M54B25",
+              "M54B30",
+              "N46B20",
+              "N52B25",
+              "N52B30",
+              "N62B40",
+              "N62B44",
+              "N62B48",
+              "S85B50"
+            ]
+          }
+        },
+        {
+          "type": "feeds",
+          "target": "high-pressure-pump"
+        }
+      ],
+      "specs": [
+        {
+          "key": "routing",
+          "label": {
+            "en": "Exact routing",
+            "lv": "Precīzs maršruts",
+            "ru": "Точная прокладка"
+          },
+          "status": "missing",
+          "note": {
+            "en": "The 3D route is schematic.",
+            "lv": "3D maršruts ir shematisks.",
+            "ru": "Маршрут в 3D схематичный."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cooling-hoses",
+      "systemId": "cooling",
+      "assemblyId": "coolant-circuit",
+      "name": {
+        "en": "Coolant hoses",
+        "lv": "Dzesēšanas šķidruma šļūtenes",
+        "ru": "Патрубки системы охлаждения"
+      },
+      "aliases": [
+        "radiator hose",
+        "upper hose",
+        "lower hose",
+        "heater hose",
+        "патрубок",
+        "šļūtene"
+      ],
+      "symptomIds": [
+        "coolant-leak",
+        "overheating"
+      ],
+      "function": {
+        "en": "Connect the engine, radiator, expansion tank and heater so coolant can circulate.",
+        "lv": "Savieno dzinēju, radiatoru, izplešanās tvertni un sildītāju, lai šķidrums cirkulētu.",
+        "ru": "Соединяют двигатель, радиатор, расширительный бачок и отопитель для циркуляции жидкости."
+      },
+      "location": {
+        "en": "Between the front of the engine and the radiator, plus heater lines to the bulkhead.",
+        "lv": "Starp dzinēja priekšu un radiatoru, kā arī sildītāja līnijas līdz starpsienai.",
+        "ru": "Между передней частью двигателя и радиатором, плюс линии отопителя к моторному щиту."
+      },
+      "relations": [
+        {
+          "type": "connects",
+          "target": "radiator"
+        },
+        {
+          "type": "connects",
+          "target": "thermostat"
+        },
+        {
+          "type": "connects",
+          "target": "coolant-pump"
+        },
+        {
+          "type": "connects",
+          "target": "expansion-tank"
+        }
+      ]
+    },
+    {
+      "id": "exhaust-system",
+      "systemId": "exhaust",
+      "assemblyId": "exhaust-piping",
+      "name": {
+        "en": "Exhaust pipes and silencers",
+        "lv": "Izplūdes caurules un trokšņa slāpētāji",
+        "ru": "Выхлопные трубы и глушители"
+      },
+      "aliases": [
+        "muffler",
+        "silencer",
+        "tailpipe",
+        "centre silencer",
+        "глушитель",
+        "резонатор",
+        "klusinātājs"
+      ],
+      "symptomIds": [
+        "exhaust-noise"
+      ],
+      "function": {
+        "en": "Carries exhaust gas from the catalytic converters to the rear and reduces noise.",
+        "lv": "Novada izplūdes gāzes no katalizatoriem uz aizmuguri un samazina troksni.",
+        "ru": "Отводит газы от катализаторов назад и снижает шум."
+      },
+      "location": {
+        "en": "Under the car from the transmission tunnel to the rear bumper.",
+        "lv": "Zem automašīnas no transmisijas tuneļa līdz aizmugurējam buferim.",
+        "ru": "Под машиной от тоннеля трансмиссии до заднего бампера."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "rear-subframe"
+        }
+      ],
+      "specs": [
+        {
+          "key": "tailpipe-layout",
+          "label": {
+            "en": "Tailpipe layout",
+            "lv": "Izpūtēju izvietojums",
+            "ru": "Расположение выхлопных насадок"
+          },
+          "status": "missing",
+          "note": {
+            "en": "The 3D model shows two tailpipes on the left as an approximation.",
+            "lv": "3D modelī aptuveni parādīti divi izpūtēji kreisajā pusē.",
+            "ru": "В 3D-модели приблизительно показаны две насадки слева."
+          }
+        }
+      ]
+    },
+    {
+      "id": "rear-drive-shafts",
+      "systemId": "driveline",
+      "assemblyId": "shafts",
+      "name": {
+        "en": "Rear drive shafts",
+        "lv": "Aizmugurējās piedziņas vārpstas",
+        "ru": "Задние приводные валы"
+      },
+      "aliases": [
+        "half shafts",
+        "axle shafts",
+        "cv joints",
+        "cv boots",
+        "полуоси",
+        "ШРУС",
+        "pusass"
+      ],
+      "symptomIds": [
+        "driveline-clunk"
+      ],
+      "function": {
+        "en": "Carry drive from the rear differential to the rear wheels through constant-velocity joints.",
+        "lv": "Pārnes piedziņu no aizmugurējā diferenciāļa uz aizmugurējiem riteņiem caur vienādu leņķisko ātrumu šarnīriem.",
+        "ru": "Передают момент от заднего дифференциала к задним колёсам через ШРУСы."
+      },
+      "location": {
+        "en": "Between the rear differential and each rear wheel hub.",
+        "lv": "Starp aizmugurējo diferenciāli un katru aizmugurējo rumbu.",
+        "ru": "Между задним дифференциалом и каждой задней ступицей."
+      },
+      "relations": [
+        {
+          "type": "drives",
+          "target": "wheels-and-tyres"
+        }
+      ]
+    },
+    {
+      "id": "wheels-and-tyres",
+      "systemId": "suspension",
+      "assemblyId": "wheels",
+      "name": {
+        "en": "Wheels and tyres",
+        "lv": "Riteņi un riepas",
+        "ru": "Колёса и шины"
+      },
+      "aliases": [
+        "rims",
+        "alloys",
+        "tires",
+        "tyre size",
+        "диски",
+        "шины",
+        "riepas",
+        "diski"
+      ],
+      "symptomIds": [
+        "vibration-at-speed"
+      ],
+      "function": {
+        "en": "Carry the car and transmit drive, braking and steering forces to the road.",
+        "lv": "Notur automašīnu un nodod piedziņas, bremzēšanas un stūrēšanas spēkus ceļam.",
+        "ru": "Держат машину и передают на дорогу тяговые, тормозные и рулевые усилия."
+      },
+      "location": {
+        "en": "At the four corners of the car.",
+        "lv": "Automašīnas četros stūros.",
+        "ru": "По четырём углам автомобиля."
+      },
+      "specs": [
+        {
+          "key": "tyres",
+          "label": {
+            "en": "Tyre size",
+            "lv": "Riepu izmērs",
+            "ru": "Размер шин"
+          },
+          "value": "225/55 R16 95W",
+          "status": "verified",
+          "sourceId": "bmw-press-saloon-2005",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B25"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "wheels",
+          "label": {
+            "en": "Wheel size",
+            "lv": "Disku izmērs",
+            "ru": "Размер дисков"
+          },
+          "value": "7J x 16 light alloy",
+          "status": "verified",
+          "sourceId": "bmw-press-saloon-2005",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B25"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "tyres",
+          "label": {
+            "en": "Tyre size",
+            "lv": "Riepu izmērs",
+            "ru": "Размер шин"
+          },
+          "status": "missing",
+          "appliesWhen": {
+            "not": {
+              "all": [
+                {
+                  "axis": "model",
+                  "in": [
+                    "525i"
+                  ]
+                },
+                {
+                  "axis": "engine",
+                  "in": [
+                    "N52B25"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "key": "pressure",
+          "label": {
+            "en": "Tyre pressure",
+            "lv": "Riepu spiediens",
+            "ru": "Давление в шинах"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "front-subframe",
+      "systemId": "suspension",
+      "assemblyId": "front-axle",
+      "name": {
+        "en": "Front axle carrier",
+        "lv": "Priekšējās ass rāmis",
+        "ru": "Передний подрамник"
+      },
+      "aliases": [
+        "front subframe",
+        "crossmember",
+        "axle carrier",
+        "подрамник",
+        "apakšrāmis"
+      ],
+      "function": {
+        "en": "Aluminium carrier that holds the front control arms, steering rack and engine mounts.",
+        "lv": "Alumīnija rāmis, kas notur priekšējās sviras, stūres mehānismu un dzinēja balstus.",
+        "ru": "Алюминиевая балка, на которой закреплены передние рычаги, рулевая рейка и опоры двигателя."
+      },
+      "location": {
+        "en": "Under the engine at the front axle line.",
+        "lv": "Zem dzinēja pie priekšējās ass līnijas.",
+        "ru": "Под двигателем на линии передней оси."
+      },
+      "specs": [
+        {
+          "key": "material",
+          "label": {
+            "en": "Front axle construction",
+            "lv": "Priekšējās ass konstrukcija",
+            "ru": "Конструкция передней оси"
+          },
+          "value": "Double-joint spring strut axle in aluminium",
+          "status": "verified",
+          "sourceId": "bmw-press-saloon-2005",
+          "appliesWhen": {
+            "axis": "drivetrain",
+            "in": [
+              "rwd"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "front-control-arms",
+      "systemId": "suspension",
+      "assemblyId": "front-axle",
+      "name": {
+        "en": "Front control arms",
+        "lv": "Priekšējās piekares sviras",
+        "ru": "Передние рычаги"
+      },
+      "aliases": [
+        "wishbone",
+        "thrust rod",
+        "tension strut",
+        "lower arm",
+        "ball joint",
+        "рычаг",
+        "растяжка",
+        "svira"
+      ],
+      "symptomIds": [
+        "suspension-knock",
+        "vibration-at-speed"
+      ],
+      "function": {
+        "en": "Two lower links per side, a wishbone and a thrust rod, that locate the wheel carrier. This is the double-joint layout.",
+        "lv": "Divas apakšējās sviras katrā pusē, šķērssvira un garensvira, kas nosaka riteņa nesēja stāvokli. Tā ir dubultšarnīra shēma.",
+        "ru": "Два нижних рычага с каждой стороны, поперечный и реактивная тяга, задающие положение поворотного кулака. Это двухшарнирная схема."
+      },
+      "location": {
+        "en": "Between the front axle carrier and the bottom of each wheel carrier.",
+        "lv": "Starp priekšējās ass rāmi un katra riteņa nesēja apakšu.",
+        "ru": "Между передним подрамником и низом каждого кулака."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "front-subframe"
+        },
+        {
+          "type": "connects",
+          "target": "front-strut"
+        }
+      ]
+    },
+    {
+      "id": "front-anti-roll-bar",
+      "systemId": "suspension",
+      "assemblyId": "front-axle",
+      "name": {
+        "en": "Front anti-roll bar",
+        "lv": "Priekšējais stabilizators",
+        "ru": "Передний стабилизатор"
+      },
+      "aliases": [
+        "sway bar",
+        "stabiliser",
+        "drop link",
+        "стабилизатор",
+        "стойка стабилизатора"
+      ],
+      "symptomIds": [
+        "suspension-knock"
+      ],
+      "function": {
+        "en": "Torsion bar that links both front struts to reduce body roll in corners.",
+        "lv": "Vērpes stienis, kas savieno abus priekšējos statņus, lai mazinātu virsbūves sasvēršanos pagriezienos.",
+        "ru": "Торсион, связывающий обе передние стойки для уменьшения крена в поворотах."
+      },
+      "location": {
+        "en": "Ahead of the front axle, linked to each strut.",
+        "lv": "Priekšā priekšējai asij, savienots ar katru statni.",
+        "ru": "Перед передней осью, соединён с каждой стойкой."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "front-subframe"
+        },
+        {
+          "type": "connects",
+          "target": "front-strut"
+        }
+      ]
+    },
+    {
+      "id": "rear-subframe",
+      "systemId": "suspension",
+      "assemblyId": "rear-axle",
+      "name": {
+        "en": "Rear axle carrier",
+        "lv": "Aizmugurējās ass rāmis",
+        "ru": "Задний подрамник"
+      },
+      "aliases": [
+        "rear subframe",
+        "rear crossmember",
+        "задний подрамник"
+      ],
+      "function": {
+        "en": "Frame that carries the rear differential and rear suspension links and isolates them from the body.",
+        "lv": "Rāmis, kas nes aizmugurējo diferenciāli un piekares sviras un izolē tos no virsbūves.",
+        "ru": "Рама, несущая задний редуктор и рычаги подвески и изолирующая их от кузова."
+      },
+      "location": {
+        "en": "Under the boot floor around the rear differential.",
+        "lv": "Zem bagāžnieka grīdas ap aizmugurējo diferenciāli.",
+        "ru": "Под полом багажника вокруг заднего редуктора."
+      },
+      "specs": [
+        {
+          "key": "axle-type",
+          "label": {
+            "en": "Rear axle construction",
+            "lv": "Aizmugurējās ass konstrukcija",
+            "ru": "Конструкция задней оси"
+          },
+          "value": "Integral IV multi-arm axle in aluminium",
+          "status": "verified",
+          "sourceId": "bmw-press-saloon-2005"
+        }
+      ]
+    },
+    {
+      "id": "rear-control-arms",
+      "systemId": "suspension",
+      "assemblyId": "rear-axle",
+      "name": {
+        "en": "Rear control arms and wheel carriers",
+        "lv": "Aizmugurējās sviras un riteņu nesēji",
+        "ru": "Задние рычаги и поворотные кулаки"
+      },
+      "aliases": [
+        "integral link",
+        "toe link",
+        "upper arm",
+        "trailing arm",
+        "rear knuckle",
+        "рычаги задней подвески",
+        "интегральный рычаг"
+      ],
+      "symptomIds": [
+        "suspension-knock"
+      ],
+      "function": {
+        "en": "Multi-link arms that locate each rear wheel carrier and control camber and toe.",
+        "lv": "Daudzsviru piekare, kas nosaka katra aizmugurējā riteņa nesēja stāvokli un kontrolē sabrukumu un saskrējienu.",
+        "ru": "Многорычажная подвеска, задающая положение каждого заднего кулака и контролирующая развал и схождение."
+      },
+      "location": {
+        "en": "Between the rear axle carrier and each rear wheel.",
+        "lv": "Starp aizmugurējās ass rāmi un katru aizmugurējo riteni.",
+        "ru": "Между задним подрамником и каждым задним колесом."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "rear-subframe"
+        },
+        {
+          "type": "connects",
+          "target": "rear-suspension"
+        },
+        {
+          "type": "connects",
+          "target": "rear-brakes"
+        }
+      ]
+    },
+    {
+      "id": "rear-anti-roll-bar",
+      "systemId": "suspension",
+      "assemblyId": "rear-axle",
+      "name": {
+        "en": "Rear anti-roll bar",
+        "lv": "Aizmugurējais stabilizators",
+        "ru": "Задний стабилизатор"
+      },
+      "aliases": [
+        "rear sway bar",
+        "задний стабилизатор"
+      ],
+      "function": {
+        "en": "Torsion bar that links both rear wheels to reduce body roll.",
+        "lv": "Vērpes stienis, kas savieno abus aizmugurējos riteņus, lai mazinātu sasvēršanos.",
+        "ru": "Торсион, связывающий задние колёса для уменьшения крена."
+      },
+      "location": {
+        "en": "Behind the rear axle, on the rear axle carrier.",
+        "lv": "Aiz aizmugurējās ass, uz aizmugurējās ass rāmja.",
+        "ru": "За задней осью, на заднем подрамнике."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "rear-subframe"
+        },
+        {
+          "type": "connects",
+          "target": "rear-control-arms"
+        }
+      ]
+    },
+    {
+      "id": "steering-column",
+      "systemId": "steering",
+      "assemblyId": "steering-controls",
+      "name": {
+        "en": "Steering column and wheel",
+        "lv": "Stūres statnis un stūre",
+        "ru": "Рулевая колонка и руль"
+      },
+      "aliases": [
+        "steering shaft",
+        "intermediate shaft",
+        "steering wheel",
+        "рулевой вал",
+        "руль",
+        "stūre"
+      ],
+      "function": {
+        "en": "Transfers the driver's steering input from the wheel through the bulkhead to the steering rack.",
+        "lv": "Nodod vadītāja stūrēšanu no stūres caur starpsienu uz stūres mehānismu.",
+        "ru": "Передаёт усилие водителя от руля через моторный щит на рулевой механизм."
+      },
+      "location": {
+        "en": "From the driver's seat through the bulkhead to the steering rack. Left-hand drive shown.",
+        "lv": "No vadītāja vietas caur starpsienu līdz stūres mehānismam. Attēlota kreisā stūre.",
+        "ru": "От места водителя через моторный щит к рулевой рейке. Показан левый руль."
+      },
+      "relations": [
+        {
+          "type": "drives",
+          "target": "steering-rack"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "symptoms": [
+    {
+      "id": "misfire",
+      "name": {
+        "en": "Misfire or rough running",
+        "lv": "Aizdedzes izlaidumi vai nevienmērīga darbība",
+        "ru": "Пропуски зажигания или неровная работа"
+      },
+      "aliases": [
+        "misfiring",
+        "stutter",
+        "shaking engine",
+        "троит",
+        "пропуски",
+        "izlaidumi",
+        "raustās"
+      ]
+    },
+    {
+      "id": "rough-idle",
+      "name": {
+        "en": "Rough or unstable idle",
+        "lv": "Nevienmērīga tukšgaita",
+        "ru": "Неровный холостой ход"
+      },
+      "aliases": [
+        "idle",
+        "hunting idle",
+        "холостые",
+        "tukšgaita"
+      ]
+    },
+    {
+      "id": "hard-start",
+      "name": {
+        "en": "Hard starting or no start",
+        "lv": "Grūta iedarbināšana vai neiedarbojas",
+        "ru": "Трудный пуск или не заводится"
+      },
+      "aliases": [
+        "won't start",
+        "no start",
+        "cranks",
+        "не заводится",
+        "neiedarbojas"
+      ]
+    },
+    {
+      "id": "cold-start",
+      "name": {
+        "en": "Hard starting when cold",
+        "lv": "Grūta iedarbināšana aukstā laikā",
+        "ru": "Трудный пуск на холодную"
+      },
+      "aliases": [
+        "cold start",
+        "winter",
+        "холодный пуск",
+        "aukstā"
+      ]
+    },
+    {
+      "id": "overheating",
+      "name": {
+        "en": "Engine overheating",
+        "lv": "Dzinēja pārkaršana",
+        "ru": "Перегрев двигателя"
+      },
+      "aliases": [
+        "temperature high",
+        "hot",
+        "перегрев",
+        "pārkarst"
+      ]
+    },
+    {
+      "id": "coolant-leak",
+      "name": {
+        "en": "Coolant loss or leak",
+        "lv": "Dzesēšanas šķidruma zudums vai noplūde",
+        "ru": "Потеря или утечка охлаждающей жидкости"
+      },
+      "aliases": [
+        "antifreeze",
+        "coolant low",
+        "антифриз",
+        "течь",
+        "antifrīzs"
+      ]
+    },
+    {
+      "id": "oil-leak",
+      "name": {
+        "en": "Oil leak",
+        "lv": "Eļļas noplūde",
+        "ru": "Утечка масла"
+      },
+      "aliases": [
+        "oil drip",
+        "oil under car",
+        "течь масла",
+        "eļļa tek"
+      ]
+    },
+    {
+      "id": "low-power",
+      "name": {
+        "en": "Loss of power",
+        "lv": "Jaudas zudums",
+        "ru": "Потеря мощности"
+      },
+      "aliases": [
+        "slow",
+        "no power",
+        "limp mode",
+        "не тянет",
+        "nevelk"
+      ]
+    },
+    {
+      "id": "engine-light",
+      "name": {
+        "en": "Engine warning light",
+        "lv": "Dzinēja brīdinājuma lampiņa",
+        "ru": "Горит лампа Check Engine"
+      },
+      "aliases": [
+        "check engine",
+        "fault code",
+        "ошибка",
+        "kļūda",
+        "chek"
+      ]
+    },
+    {
+      "id": "battery-drain",
+      "name": {
+        "en": "Battery drains or does not charge",
+        "lv": "Akumulators izlādējas vai nelādējas",
+        "ru": "Аккумулятор разряжается или не заряжается"
+      },
+      "aliases": [
+        "flat battery",
+        "charging",
+        "разряд",
+        "izlādējas"
+      ]
+    },
+    {
+      "id": "belt-noise",
+      "name": {
+        "en": "Squeal or chirp from the front of the engine",
+        "lv": "Svilpiens vai čirkstēšana no dzinēja priekšas",
+        "ru": "Свист или писк спереди двигателя"
+      },
+      "aliases": [
+        "squeal",
+        "belt noise",
+        "свист",
+        "svilpj"
+      ]
+    },
+    {
+      "id": "brake-noise",
+      "name": {
+        "en": "Brake squeal or grinding",
+        "lv": "Bremžu čīkstēšana vai skrāpēšana",
+        "ru": "Скрип или скрежет тормозов"
+      },
+      "aliases": [
+        "squeaking brakes",
+        "grinding",
+        "скрип",
+        "čīkst"
+      ]
+    },
+    {
+      "id": "brake-vibration",
+      "name": {
+        "en": "Vibration when braking",
+        "lv": "Vibrācija bremzējot",
+        "ru": "Вибрация при торможении"
+      },
+      "aliases": [
+        "pulsating pedal",
+        "shudder",
+        "биение",
+        "vibrē"
+      ]
+    },
+    {
+      "id": "abs-light",
+      "name": {
+        "en": "ABS or DSC warning light",
+        "lv": "ABS vai DSC brīdinājuma lampiņa",
+        "ru": "Горит ABS или DSC"
+      },
+      "aliases": [
+        "abs",
+        "dsc",
+        "traction light",
+        "абс"
+      ]
+    },
+    {
+      "id": "suspension-knock",
+      "name": {
+        "en": "Knocking over bumps",
+        "lv": "Klaudzieni uz nelīdzenumiem",
+        "ru": "Стук на неровностях"
+      },
+      "aliases": [
+        "clunk over bumps",
+        "rattle",
+        "стук",
+        "klauvē"
+      ]
+    },
+    {
+      "id": "vibration-at-speed",
+      "name": {
+        "en": "Vibration at speed",
+        "lv": "Vibrācija braucot ātri",
+        "ru": "Вибрация на скорости"
+      },
+      "aliases": [
+        "shimmy",
+        "wobble",
+        "вибрация",
+        "vibrācija"
+      ]
+    },
+    {
+      "id": "idle-vibration",
+      "name": {
+        "en": "Vibration at idle",
+        "lv": "Vibrācija tukšgaitā",
+        "ru": "Вибрация на холостых"
+      },
+      "aliases": [
+        "shaking at idle",
+        "дрожит",
+        "trīc"
+      ]
+    },
+    {
+      "id": "heavy-steering",
+      "name": {
+        "en": "Heavy or noisy steering",
+        "lv": "Smaga vai trokšņaina stūrēšana",
+        "ru": "Тяжёлый или шумный руль"
+      },
+      "aliases": [
+        "stiff steering",
+        "steering whine",
+        "тяжёлый руль",
+        "smaga stūre"
+      ]
+    },
+    {
+      "id": "driveline-clunk",
+      "name": {
+        "en": "Clunk when pulling away",
+        "lv": "Klaudziens, uzsākot kustību",
+        "ru": "Стук при трогании"
+      },
+      "aliases": [
+        "clunk",
+        "jerk",
+        "удар при трогании",
+        "klaudziens"
+      ]
+    },
+    {
+      "id": "rear-whine",
+      "name": {
+        "en": "Whine from the rear while driving",
+        "lv": "Gaudošana no aizmugures braucot",
+        "ru": "Вой сзади при движении"
+      },
+      "aliases": [
+        "howl",
+        "diff noise",
+        "вой",
+        "gaudo"
+      ]
+    },
+    {
+      "id": "exhaust-noise",
+      "name": {
+        "en": "Loud or rattling exhaust",
+        "lv": "Skaļa vai graboša izplūde",
+        "ru": "Громкий или дребезжащий выхлоп"
+      },
+      "aliases": [
+        "exhaust rattle",
+        "loud exhaust",
+        "выхлоп",
+        "izpūtējs"
+      ]
+    },
+    {
+      "id": "fuel-smell",
+      "name": {
+        "en": "Fuel smell",
+        "lv": "Degvielas smaka",
+        "ru": "Запах топлива"
+      },
+      "aliases": [
+        "petrol smell",
+        "gas smell",
+        "запах бензина",
+        "benzīna smaka"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "components": [
+    {
+      "id": "battery",
+      "systemId": "electrical",
+      "assemblyId": "power-supply",
+      "name": {
+        "en": "Battery",
+        "lv": "Akumulators",
+        "ru": "Аккумулятор"
+      },
+      "aliases": [
+        "car battery",
+        "agm",
+        "12v battery",
+        "аккумулятор",
+        "АКБ",
+        "akumulators"
+      ],
+      "symptomIds": [
+        "battery-drain",
+        "hard-start"
+      ],
+      "function": {
+        "en": "Stores 12 V power for starting and for electronics when the engine is off.",
+        "lv": "Uzglabā 12 V enerģiju iedarbināšanai un elektronikai, kad dzinējs ir izslēgts.",
+        "ru": "Хранит энергию 12 В для пуска и для электроники при выключенном двигателе."
+      },
+      "location": {
+        "en": "In the boot, under the floor on the right side.",
+        "lv": "Bagāžniekā, zem grīdas labajā pusē.",
+        "ru": "В багажнике, под полом справа."
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "starter"
+        }
+      ],
+      "specs": [
+        {
+          "key": "registration",
+          "label": {
+            "en": "Registration after replacement",
+            "lv": "Reģistrācija pēc nomaiņas",
+            "ru": "Регистрация после замены"
+          },
+          "status": "missing"
+        },
+        {
+          "key": "capacity",
+          "label": {
+            "en": "Capacity",
+            "lv": "Ietilpība",
+            "ru": "Ёмкость"
+          },
+          "value": "80",
+          "unit": "Ah",
+          "status": "verified",
+          "sourceId": "bmw-press-saloon-2005",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B25",
+              "N52B30"
+            ]
+          }
+        },
+        {
+          "key": "capacity",
+          "label": {
+            "en": "Capacity",
+            "lv": "Ietilpība",
+            "ru": "Ёмкость"
+          },
+          "status": "missing",
+          "appliesWhen": {
+            "not": {
+              "axis": "engine",
+              "in": [
+                "N52B25",
+                "N52B30"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "battery-sensor",
+      "systemId": "electrical",
+      "assemblyId": "power-supply",
+      "name": {
+        "en": "Intelligent battery sensor (IBS)",
+        "lv": "Inteliģentais akumulatora sensors (IBS)",
+        "ru": "Интеллектуальный датчик АКБ (IBS)"
+      },
+      "aliases": [
+        "ibs",
+        "battery sensor",
+        "датчик акб"
+      ],
+      "symptomIds": [
+        "battery-drain"
+      ],
+      "function": {
+        "en": "Measures battery current, voltage and temperature so charging can be managed.",
+        "lv": "Mēra akumulatora strāvu, spriegumu un temperatūru, lai pārvaldītu uzlādi.",
+        "ru": "Измеряет ток, напряжение и температуру АКБ для управления зарядкой."
+      },
+      "location": {
+        "en": "On the battery negative terminal.",
+        "lv": "Pie akumulatora negatīvās spailes.",
+        "ru": "На минусовой клемме аккумулятора."
+      },
+      "relations": [
+        {
+          "type": "monitors",
+          "target": "battery"
+        },
+        {
+          "type": "connects",
+          "target": "engine-control-unit"
+        }
+      ]
+    },
+    {
+      "id": "alternator",
+      "systemId": "electrical",
+      "assemblyId": "power-supply",
+      "name": {
+        "en": "Alternator",
+        "lv": "Ģenerators",
+        "ru": "Генератор"
+      },
+      "aliases": [
+        "generator",
+        "charging",
+        "генератор",
+        "ģenerators"
+      ],
+      "symptomIds": [
+        "battery-drain"
+      ],
+      "function": {
+        "en": "Belt-driven generator that charges the battery and powers the car while the engine runs.",
+        "lv": "Siksnas dzīts ģenerators, kas lādē akumulatoru un baro automašīnu, kamēr dzinējs strādā.",
+        "ru": "Генератор с ременным приводом: заряжает АКБ и питает машину при работающем двигателе."
+      },
+      "location": {
+        "en": "Front of the engine, on the accessory belt.",
+        "lv": "Dzinēja priekšā, uz palīgagregātu siksnas.",
+        "ru": "Спереди двигателя, на ремне навесного оборудования."
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "battery"
+        }
+      ],
+      "specs": [
+        {
+          "key": "output",
+          "label": {
+            "en": "Rated output",
+            "lv": "Nominālā strāva",
+            "ru": "Номинальный ток"
+          },
+          "value": "155",
+          "unit": "A",
+          "status": "verified",
+          "sourceId": "bmw-press-saloon-2005",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B25",
+              "N52B30"
+            ]
+          }
+        },
+        {
+          "key": "output",
+          "label": {
+            "en": "Rated output",
+            "lv": "Nominālā strāva",
+            "ru": "Номинальный ток"
+          },
+          "status": "missing",
+          "appliesWhen": {
+            "not": {
+              "axis": "engine",
+              "in": [
+                "N52B25",
+                "N52B30"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "starter",
+      "systemId": "electrical",
+      "assemblyId": "power-supply",
+      "name": {
+        "en": "Starter motor",
+        "lv": "Starteris",
+        "ru": "Стартер"
+      },
+      "aliases": [
+        "starter",
+        "стартер",
+        "starteris"
+      ],
+      "symptomIds": [
+        "hard-start"
+      ],
+      "function": {
+        "en": "Electric motor that turns the engine over to start it.",
+        "lv": "Elektromotors, kas pagriež dzinēju, lai to iedarbinātu.",
+        "ru": "Электромотор, проворачивающий двигатель для пуска."
+      },
+      "location": {
+        "en": "Lower side of the engine, at the flywheel.",
+        "lv": "Dzinēja apakšējā sānā, pie spararata.",
+        "ru": "Внизу сбоку двигателя, у маховика."
+      },
+      "relations": [
+        {
+          "type": "drives",
+          "target": "engine-block"
+        }
+      ]
+    },
+    {
+      "id": "car-access-system",
+      "systemId": "electrical",
+      "assemblyId": "body-electronics",
+      "name": {
+        "en": "Car Access System (CAS)",
+        "lv": "Piekļuves sistēmas modulis (CAS)",
+        "ru": "Модуль доступа CAS"
+      },
+      "aliases": [
+        "cas",
+        "immobiliser",
+        "key module",
+        "иммобилайзер",
+        "imobilaizers"
+      ],
+      "function": {
+        "en": "Checks the key, unlocks the car and allows the engine to start.",
+        "lv": "Pārbauda atslēgu, atslēdz automašīnu un atļauj dzinēja iedarbināšanu.",
+        "ru": "Проверяет ключ, открывает машину и разрешает пуск двигателя."
+      },
+      "location": {
+        "en": "Behind the dashboard near the steering column; exact position not confirmed.",
+        "lv": "Aiz paneļa pie stūres statņa; precīza vieta nav apstiprināta.",
+        "ru": "За панелью у рулевой колонки; точное место не подтверждено."
+      },
+      "relations": [
+        {
+          "type": "controls",
+          "target": "starter"
+        }
+      ],
+      "specs": [
+        {
+          "key": "version",
+          "label": {
+            "en": "CAS version",
+            "lv": "CAS versija",
+            "ru": "Версия CAS"
+          },
+          "status": "missing"
+        }
+      ]
+    }
+  ]
+}

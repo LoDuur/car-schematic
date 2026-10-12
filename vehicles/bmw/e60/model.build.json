@@ -1,0 +1,1068 @@
+{
+  "referenceConfig": {
+    "year": "2006",
+    "body": "sedan",
+    "model": "525i",
+    "engine": "N52B25",
+    "fuel": "petrol",
+    "transmission": "automatic-6",
+    "drivetrain": "rwd"
+  },
+  "referenceDescription": "BMW 525i saloon (E60), 2006, N52B25 inline-six, 6-speed Steptronic automatic, rear-wheel drive, left-hand drive, 225/55 R16 tyres on 7J x 16 wheels.",
+  "coordinateFrame": "Blender: +X forward, +Y left, +Z up, metres, origin on the ground at mid-wheelbase. glTF export converts to +X forward, +Y up, +Z right.",
+  "layoutNote": "Overall dimensions, track, tyre size and brake disc sizes follow BMW press data. Component shapes and positions are reconstructed from those dimensions and general BMW drivetrain layout. They have not been checked against photographs, workshop diagrams or factory CAD data, so treat every position as approximate.",
+  "measures": {
+    "length": {
+      "value": 4.841,
+      "status": "verified",
+      "source": "bmw-press-saloon-2005",
+      "note": "Overall length, saloon."
+    },
+    "width": {
+      "value": 1.846,
+      "status": "verified",
+      "source": "bmw-press-saloon-2005",
+      "note": "Overall width without mirrors."
+    },
+    "height": {
+      "value": 1.468,
+      "status": "verified",
+      "source": "bmw-press-saloon-2005",
+      "note": "Unladen height, saloon."
+    },
+    "wheelbase": {
+      "value": 2.888,
+      "status": "verified",
+      "source": "bmw-press-saloon-2005",
+      "note": "Wheelbase, saloon."
+    },
+    "track_front": {
+      "value": 1.558,
+      "status": "verified",
+      "source": "bmw-press-saloon-2005",
+      "note": "Front track."
+    },
+    "track_rear": {
+      "value": 1.582,
+      "status": "verified",
+      "source": "bmw-press-saloon-2005",
+      "note": "Rear track."
+    },
+    "tyre_radius": {
+      "value": 0.327,
+      "status": "verified",
+      "source": "bmw-press-saloon-2005",
+      "note": "Derived from 225/55 R16: 406.4 mm rim + 2 x 123.75 mm sidewall = 653.9 mm diameter."
+    },
+    "tyre_width": {
+      "value": 0.225,
+      "status": "verified",
+      "source": "bmw-press-saloon-2005",
+      "note": "225 mm section width."
+    },
+    "rim_radius": {
+      "value": 0.2032,
+      "status": "verified",
+      "source": "bmw-press-saloon-2005",
+      "note": "16 inch rim diameter."
+    },
+    "rim_width": {
+      "value": 0.1778,
+      "status": "verified",
+      "source": "bmw-press-saloon-2005",
+      "note": "7 J rim width."
+    },
+    "rear_disc_diameter": {
+      "value": 0.32,
+      "status": "verified",
+      "source": "bmw-press-saloon-2005",
+      "note": "Rear disc 320 x 20 mm, vented."
+    },
+    "rear_disc_thickness": {
+      "value": 0.02,
+      "status": "verified",
+      "source": "bmw-press-saloon-2005",
+      "note": "Rear disc 320 x 20 mm, vented."
+    },
+    "front_disc_diameter": {
+      "value": 0.324,
+      "status": "unverified",
+      "source": "bmw-press-saloon-2005",
+      "note": "Press sheet columns are misaligned; a 2004 sheet gives 310 x 24 mm for the earlier 525i."
+    },
+    "front_disc_thickness": {
+      "value": 0.03,
+      "status": "unverified",
+      "source": "bmw-press-saloon-2005",
+      "note": "See front disc diameter."
+    },
+    "fuel_tank_volume_litres": {
+      "value": 70.0,
+      "status": "verified",
+      "source": "bmw-press-saloon-2005",
+      "note": "Approximately 70 litres."
+    },
+    "bore": {
+      "value": 0.082,
+      "status": "verified",
+      "source": "wikipedia-n52",
+      "note": "N52B25 bore 82 mm."
+    },
+    "stroke": {
+      "value": 0.0788,
+      "status": "verified",
+      "source": "wikipedia-n52",
+      "note": "N52B25 stroke 78.8 mm."
+    },
+    "front_overhang": {
+      "value": 0.84,
+      "status": "approximate",
+      "source": null,
+      "note": "Estimated from side photographs; total overhang is 1.953 m (length minus wheelbase)."
+    },
+    "ground_clearance": {
+      "value": 0.135,
+      "status": "approximate",
+      "source": null,
+      "note": "Estimated sill height above ground."
+    },
+    "bore_spacing": {
+      "value": 0.091,
+      "status": "approximate",
+      "source": null,
+      "note": "BMW inline-six bore spacing is commonly given as 91 mm; not checked against a cited source."
+    },
+    "engine_inclination_degrees": {
+      "value": 30.0,
+      "status": "approximate",
+      "source": null,
+      "note": "Engine leans toward the exhaust (right) side; angle not checked against a cited source."
+    }
+  },
+  "parts": {
+    "body__shell": {
+      "system": "body",
+      "triangles": 3044,
+      "boundsMin": [
+        -2.557,
+        -0.923,
+        0.135
+      ],
+      "boundsMax": [
+        2.284,
+        0.923,
+        1.468
+      ]
+    },
+    "body__bulkhead": {
+      "system": "body",
+      "triangles": 12,
+      "boundsMin": [
+        0.777,
+        -0.7,
+        0.31
+      ],
+      "boundsMax": [
+        0.789,
+        0.7,
+        0.93
+      ]
+    },
+    "body__strut-towers": {
+      "system": "body",
+      "triangles": 224,
+      "boundsMin": [
+        1.304,
+        -0.695,
+        0.64
+      ],
+      "boundsMax": [
+        1.524,
+        0.695,
+        0.82
+      ]
+    },
+    "body__kidney-grille": {
+      "system": "body",
+      "triangles": 600,
+      "boundsMin": [
+        2.239,
+        -0.195,
+        0.56
+      ],
+      "boundsMax": [
+        2.269,
+        0.195,
+        0.68
+      ]
+    },
+    "engine-block": {
+      "system": "engine",
+      "triangles": 700,
+      "boundsMin": [
+        0.871,
+        -0.3033,
+        0.165
+      ],
+      "boundsMax": [
+        1.554,
+        0.2733,
+        0.7824
+      ]
+    },
+    "oil-pan": {
+      "system": "engine",
+      "triangles": 344,
+      "boundsMin": [
+        0.883,
+        -0.165,
+        0.175
+      ],
+      "boundsMax": [
+        1.504,
+        0.15,
+        0.385
+      ]
+    },
+    "cylinder-head": {
+      "system": "engine",
+      "triangles": 1496,
+      "boundsMin": [
+        0.888,
+        -0.2761,
+        0.5482
+      ],
+      "boundsMax": [
+        1.504,
+        -0.006,
+        0.7942
+      ]
+    },
+    "valvetronic-motor": {
+      "system": "engine",
+      "triangles": 312,
+      "boundsMin": [
+        0.973,
+        -0.0766,
+        0.7232
+      ],
+      "boundsMax": [
+        1.033,
+        0.0342,
+        0.8272
+      ]
+    },
+    "vanos-solenoids": {
+      "system": "engine",
+      "triangles": 344,
+      "boundsMin": [
+        1.534,
+        -0.2177,
+        0.6364
+      ],
+      "boundsMax": [
+        1.599,
+        -0.0865,
+        0.731
+      ]
+    },
+    "oil-filter-housing": {
+      "system": "engine",
+      "triangles": 444,
+      "boundsMin": [
+        1.3115,
+        0.0882,
+        0.4823
+      ],
+      "boundsMax": [
+        1.4155,
+        0.2152,
+        0.6873
+      ]
+    },
+    "crankshaft-sensor": {
+      "system": "engine",
+      "triangles": 76,
+      "boundsMin": [
+        0.923,
+        0.1363,
+        0.4525
+      ],
+      "boundsMax": [
+        0.943,
+        0.2042,
+        0.5021
+      ]
+    },
+    "intake-manifold": {
+      "system": "intake",
+      "triangles": 3356,
+      "boundsMin": [
+        0.933,
+        -0.037,
+        0.6616
+      ],
+      "boundsMax": [
+        1.484,
+        0.2678,
+        0.8553
+      ]
+    },
+    "throttle-body": {
+      "system": "intake",
+      "triangles": 332,
+      "boundsMin": [
+        1.494,
+        0.1629,
+        0.6807
+      ],
+      "boundsMax": [
+        1.564,
+        0.2643,
+        0.7939
+      ]
+    },
+    "air-filter-housing": {
+      "system": "intake",
+      "triangles": 1704,
+      "boundsMin": [
+        1.5558,
+        0.1644,
+        0.5757
+      ],
+      "boundsMax": [
+        2.2484,
+        0.565,
+        0.8187
+      ]
+    },
+    "fuel-injectors": {
+      "system": "fuel",
+      "triangles": 332,
+      "boundsMin": [
+        0.923,
+        -0.0184,
+        0.738
+      ],
+      "boundsMax": [
+        1.474,
+        0.0042,
+        0.8073
+      ]
+    },
+    "ignition-coils": {
+      "system": "ignition",
+      "triangles": 1032,
+      "boundsMin": [
+        0.9485,
+        -0.2311,
+        0.6843
+      ],
+      "boundsMax": [
+        1.4385,
+        -0.1428,
+        0.8152
+      ]
+    },
+    "spark-plugs": {
+      "system": "ignition",
+      "triangles": 432,
+      "boundsMin": [
+        0.9569,
+        -0.1558,
+        0.6109
+      ],
+      "boundsMax": [
+        1.4301,
+        -0.1062,
+        0.6829
+      ]
+    },
+    "accessory-belt-drive": {
+      "system": "engine",
+      "triangles": 1640,
+      "boundsMin": [
+        1.532,
+        -0.2499,
+        0.3245
+      ],
+      "boundsMax": [
+        1.583,
+        0.1033,
+        0.6915
+      ]
+    },
+    "alternator": {
+      "system": "electrical",
+      "triangles": 556,
+      "boundsMin": [
+        1.404,
+        -0.0204,
+        0.5696
+      ],
+      "boundsMax": [
+        1.583,
+        0.1312,
+        0.7299
+      ]
+    },
+    "power-steering-pump": {
+      "system": "steering",
+      "triangles": 588,
+      "boundsMin": [
+        1.419,
+        -0.2423,
+        0.3761
+      ],
+      "boundsMax": [
+        1.582,
+        -0.1225,
+        0.5152
+      ]
+    },
+    "coolant-pump": {
+      "system": "cooling",
+      "triangles": 348,
+      "boundsMin": [
+        1.449,
+        0.0926,
+        0.3962
+      ],
+      "boundsMax": [
+        1.599,
+        0.2122,
+        0.5188
+      ]
+    },
+    "thermostat": {
+      "system": "cooling",
+      "triangles": 312,
+      "boundsMin": [
+        1.524,
+        0.0594,
+        0.4862
+      ],
+      "boundsMax": [
+        1.605,
+        0.147,
+        0.5974
+      ]
+    },
+    "engine-mounts": {
+      "system": "engine",
+      "triangles": 736,
+      "boundsMin": [
+        1.1915,
+        -0.342,
+        0.2225
+      ],
+      "boundsMax": [
+        1.2755,
+        0.342,
+        0.5144
+      ]
+    },
+    "starter": {
+      "system": "electrical",
+      "triangles": 428,
+      "boundsMin": [
+        0.743,
+        0.108,
+        0.278
+      ],
+      "boundsMax": [
+        0.913,
+        0.217,
+        0.387
+      ]
+    },
+    "radiator": {
+      "system": "cooling",
+      "triangles": 536,
+      "boundsMin": [
+        2.039,
+        -0.38,
+        0.28
+      ],
+      "boundsMax": [
+        2.119,
+        0.38,
+        0.72
+      ]
+    },
+    "electric-fan": {
+      "system": "cooling",
+      "triangles": 692,
+      "boundsMin": [
+        1.964,
+        -0.25,
+        0.25
+      ],
+      "boundsMax": [
+        2.049,
+        0.25,
+        0.75
+      ]
+    },
+    "expansion-tank": {
+      "system": "cooling",
+      "triangles": 348,
+      "boundsMin": [
+        1.914,
+        -0.51,
+        0.62
+      ],
+      "boundsMax": [
+        2.074,
+        -0.41,
+        0.805
+      ]
+    },
+    "cooling-hoses": {
+      "system": "cooling",
+      "triangles": 2544,
+      "boundsMin": [
+        0.8012,
+        -0.4628,
+        0.2266
+      ],
+      "boundsMax": [
+        2.0509,
+        0.3748,
+        0.7253
+      ]
+    },
+    "intercooler": {
+      "system": "intake",
+      "triangles": 228,
+      "boundsMin": [
+        2.159,
+        -0.34,
+        0.185
+      ],
+      "boundsMax": [
+        2.229,
+        0.34,
+        0.355
+      ]
+    },
+    "exhaust-manifold": {
+      "system": "exhaust",
+      "triangles": 2736,
+      "boundsMin": [
+        0.937,
+        -0.3086,
+        0.3467
+      ],
+      "boundsMax": [
+        1.45,
+        -0.1984,
+        0.603
+      ]
+    },
+    "catalytic-converter": {
+      "system": "exhaust",
+      "triangles": 1504,
+      "boundsMin": [
+        0.78,
+        -0.337,
+        0.163
+      ],
+      "boundsMax": [
+        1.356,
+        -0.103,
+        0.3715
+      ]
+    },
+    "oxygen-sensors": {
+      "system": "exhaust",
+      "triangles": 288,
+      "boundsMin": [
+        0.7096,
+        -0.287,
+        0.253
+      ],
+      "boundsMax": [
+        1.3254,
+        -0.153,
+        0.38
+      ]
+    },
+    "particulate-filter": {
+      "system": "exhaust",
+      "triangles": 224,
+      "boundsMin": [
+        0.33,
+        -0.275,
+        0.16
+      ],
+      "boundsMax": [
+        0.67,
+        -0.125,
+        0.31
+      ]
+    },
+    "exhaust-system": {
+      "system": "exhaust",
+      "triangles": 2924,
+      "boundsMin": [
+        -2.5382,
+        -0.46,
+        0.165
+      ],
+      "boundsMax": [
+        0.8131,
+        0.4561,
+        0.395
+      ]
+    },
+    "transmission": {
+      "system": "driveline",
+      "triangles": 1692,
+      "boundsMin": [
+        0.147,
+        -0.3434,
+        0.205
+      ],
+      "boundsMax": [
+        2.035,
+        0.215,
+        0.635
+      ]
+    },
+    "propeller-shaft": {
+      "system": "driveline",
+      "triangles": 1028,
+      "boundsMin": [
+        -1.1402,
+        -0.11,
+        0.2905
+      ],
+      "boundsMax": [
+        0.153,
+        0.11,
+        0.475
+      ]
+    },
+    "rear-differential": {
+      "system": "driveline",
+      "triangles": 1336,
+      "boundsMin": [
+        -1.576,
+        -0.18,
+        0.197
+      ],
+      "boundsMax": [
+        -1.184,
+        0.18,
+        0.473
+      ]
+    },
+    "rear-drive-shafts": {
+      "system": "driveline",
+      "triangles": 2672,
+      "boundsMin": [
+        -1.489,
+        -0.7166,
+        0.2817
+      ],
+      "boundsMax": [
+        -1.399,
+        0.7166,
+        0.3803
+      ]
+    },
+    "clutch": {
+      "system": "driveline",
+      "triangles": 480,
+      "boundsMin": [
+        0.808,
+        -0.15,
+        0.27
+      ],
+      "boundsMax": [
+        0.8655,
+        0.15,
+        0.57
+      ]
+    },
+    "transfer-case": {
+      "system": "driveline",
+      "triangles": 496,
+      "boundsMin": [
+        0.091,
+        -0.195,
+        0.26
+      ],
+      "boundsMax": [
+        1.3047,
+        0.03,
+        0.5
+      ]
+    },
+    "front-differential": {
+      "system": "driveline",
+      "triangles": 336,
+      "boundsMin": [
+        1.334,
+        -0.6801,
+        0.21
+      ],
+      "boundsMax": [
+        1.524,
+        0.6796,
+        0.39
+      ]
+    },
+    "wheels-and-tyres": {
+      "system": "suspension",
+      "triangles": 13792,
+      "boundsMin": [
+        -1.771,
+        -0.9075,
+        0.0
+      ],
+      "boundsMax": [
+        1.771,
+        0.9075,
+        0.654
+      ]
+    },
+    "front-brakes": {
+      "system": "brakes",
+      "triangles": 2448,
+      "boundsMin": [
+        1.27,
+        -0.784,
+        0.165
+      ],
+      "boundsMax": [
+        1.606,
+        0.784,
+        0.489
+      ]
+    },
+    "rear-brakes": {
+      "system": "brakes",
+      "triangles": 2448,
+      "boundsMin": [
+        -1.616,
+        -0.796,
+        0.167
+      ],
+      "boundsMax": [
+        -1.284,
+        0.796,
+        0.487
+      ]
+    },
+    "front-strut": {
+      "system": "suspension",
+      "triangles": 5352,
+      "boundsMin": [
+        1.3415,
+        -0.6939,
+        0.207
+      ],
+      "boundsMax": [
+        1.589,
+        0.6939,
+        0.7968
+      ]
+    },
+    "front-control-arms": {
+      "system": "suspension",
+      "triangles": 1568,
+      "boundsMin": [
+        1.3825,
+        -0.661,
+        0.1761
+      ],
+      "boundsMax": [
+        1.8184,
+        0.661,
+        0.2558
+      ]
+    },
+    "front-subframe": {
+      "system": "suspension",
+      "triangles": 768,
+      "boundsMin": [
+        1.1935,
+        -0.39,
+        0.175
+      ],
+      "boundsMax": [
+        1.804,
+        0.39,
+        0.24
+      ]
+    },
+    "front-anti-roll-bar": {
+      "system": "suspension",
+      "triangles": 840,
+      "boundsMin": [
+        1.4317,
+        -0.6278,
+        0.233
+      ],
+      "boundsMax": [
+        1.6779,
+        0.6278,
+        0.4965
+      ]
+    },
+    "steering-rack": {
+      "system": "steering",
+      "triangles": 876,
+      "boundsMin": [
+        1.509,
+        -0.652,
+        0.2135
+      ],
+      "boundsMax": [
+        1.6015,
+        0.652,
+        0.33
+      ]
+    },
+    "steering-column": {
+      "system": "steering",
+      "triangles": 2156,
+      "boundsMin": [
+        0.1693,
+        0.1695,
+        0.3201
+      ],
+      "boundsMax": [
+        1.5537,
+        0.5705,
+        1.1528
+      ]
+    },
+    "rear-control-arms": {
+      "system": "suspension",
+      "triangles": 2400,
+      "boundsMin": [
+        -1.6123,
+        -0.706,
+        0.2018
+      ],
+      "boundsMax": [
+        -1.0933,
+        0.706,
+        0.4602
+      ]
+    },
+    "rear-suspension": {
+      "system": "suspension",
+      "triangles": 4216,
+      "boundsMin": [
+        -1.664,
+        -0.6645,
+        0.2236
+      ],
+      "boundsMax": [
+        -1.359,
+        0.6645,
+        0.7229
+      ]
+    },
+    "rear-subframe": {
+      "system": "suspension",
+      "triangles": 688,
+      "boundsMin": [
+        -1.784,
+        -0.48,
+        0.26
+      ],
+      "boundsMax": [
+        -1.004,
+        0.48,
+        0.375
+      ]
+    },
+    "rear-anti-roll-bar": {
+      "system": "suspension",
+      "triangles": 712,
+      "boundsMin": [
+        -1.7195,
+        -0.5359,
+        0.1886
+      ],
+      "boundsMax": [
+        -1.4481,
+        0.5359,
+        0.2816
+      ]
+    },
+    "fuel-tank": {
+      "system": "fuel",
+      "triangles": 956,
+      "boundsMin": [
+        -1.5596,
+        -0.8778,
+        0.21
+      ],
+      "boundsMax": [
+        -0.64,
+        0.5,
+        0.7396
+      ]
+    },
+    "fuel-pump": {
+      "system": "fuel",
+      "triangles": 316,
+      "boundsMin": [
+        -0.92,
+        -0.39,
+        0.225
+      ],
+      "boundsMax": [
+        -0.78,
+        -0.25,
+        0.46
+      ]
+    },
+    "fuel-lines": {
+      "system": "fuel",
+      "triangles": 684,
+      "boundsMin": [
+        -0.8239,
+        -0.3242,
+        0.1541
+      ],
+      "boundsMax": [
+        0.9265,
+        0.3003,
+        0.8722
+      ]
+    },
+    "brake-booster": {
+      "system": "brakes",
+      "triangles": 468,
+      "boundsMin": [
+        0.843,
+        0.275,
+        0.655
+      ],
+      "boundsMax": [
+        1.163,
+        0.525,
+        0.905
+      ]
+    },
+    "dsc-unit": {
+      "system": "brakes",
+      "triangles": 904,
+      "boundsMin": [
+        1.1409,
+        -0.6807,
+        0.4235
+      ],
+      "boundsMax": [
+        1.629,
+        0.6801,
+        0.7726
+      ]
+    },
+    "battery": {
+      "system": "electrical",
+      "triangles": 204,
+      "boundsMin": [
+        -2.2145,
+        -0.5875,
+        0.325
+      ],
+      "boundsMax": [
+        -1.8995,
+        -0.4125,
+        0.535
+      ]
+    },
+    "battery-sensor": {
+      "system": "electrical",
+      "triangles": 152,
+      "boundsMin": [
+        -2.2829,
+        -0.5,
+        0.3289
+      ],
+      "boundsMax": [
+        -2.142,
+        -0.4541,
+        0.554
+      ]
+    },
+    "engine-control-unit": {
+      "system": "engine",
+      "triangles": 432,
+      "boundsMin": [
+        0.7634,
+        -0.64,
+        0.7466
+      ],
+      "boundsMax": [
+        0.988,
+        -0.48,
+        0.8534
+      ]
+    },
+    "car-access-system": {
+      "system": "electrical",
+      "triangles": 120,
+      "boundsMin": [
+        0.358,
+        0.25,
+        0.7025
+      ],
+      "boundsMax": [
+        0.498,
+        0.35,
+        0.755
+      ]
+    },
+    "turbocharger": {
+      "system": "intake",
+      "triangles": 1968,
+      "boundsMin": [
+        1.041,
+        -0.4137,
+        0.2301
+      ],
+      "boundsMax": [
+        1.3453,
+        -0.2008,
+        0.4301
+      ]
+    },
+    "high-pressure-pump": {
+      "system": "fuel",
+      "triangles": 268,
+      "boundsMin": [
+        0.908,
+        -0.3117,
+        0.6649
+      ],
+      "boundsMax": [
+        0.978,
+        -0.2033,
+        0.7916
+      ]
+    },
+    "glow-plugs": {
+      "system": "ignition",
+      "triangles": 384,
+      "boundsMin": [
+        0.9586,
+        -0.0989,
+        0.6422
+      ],
+      "boundsMax": [
+        1.4284,
+        -0.0697,
+        0.7628
+      ]
+    }
+  }
+}

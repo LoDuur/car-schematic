@@ -1,0 +1,677 @@
+{
+  "components": [
+    {
+      "id": "transmission",
+      "systemId": "driveline",
+      "assemblyId": "gearbox",
+      "name": {
+        "en": "Transmission",
+        "lv": "Ātrumkārba",
+        "ru": "Коробка передач"
+      },
+      "aliases": [
+        "gearbox",
+        "automatic",
+        "manual",
+        "smg",
+        "zf",
+        "getrag",
+        "коробка",
+        "акпп",
+        "мкпп",
+        "kārba"
+      ],
+      "function": {
+        "en": "Changes the gear ratio between the engine and the wheels.",
+        "lv": "Maina pārnesuma attiecību starp dzinēju un riteņiem.",
+        "ru": "Меняет передаточное число между двигателем и колёсами."
+      },
+      "location": {
+        "en": "Behind the engine, in the transmission tunnel.",
+        "lv": "Aiz dzinēja, transmisijas tunelī.",
+        "ru": "За двигателем, в тоннеле трансмиссии."
+      },
+      "relations": [
+        {
+          "type": "drives",
+          "target": "propeller-shaft"
+        },
+        {
+          "type": "drives",
+          "target": "transfer-case"
+        }
+      ],
+      "specs": [
+        {
+          "key": "model",
+          "label": {
+            "en": "Gearbox model",
+            "lv": "Ātrumkārbas modelis",
+            "ru": "Модель коробки"
+          },
+          "value": "ZF 6HP19",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "transmission",
+                "in": [
+                  "automatic-6"
+                ]
+              },
+              {
+                "axis": "model",
+                "in": [
+                  "525d"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "model",
+          "label": {
+            "en": "Gearbox model",
+            "lv": "Ātrumkārbas modelis",
+            "ru": "Модель коробки"
+          },
+          "value": "ZF 6HP26",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "transmission",
+                "in": [
+                  "automatic-6"
+                ]
+              },
+              {
+                "axis": "drivetrain",
+                "in": [
+                  "rwd"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              },
+              {
+                "not": {
+                  "axis": "model",
+                  "in": [
+                    "525d"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "key": "model",
+          "label": {
+            "en": "Gearbox model",
+            "lv": "Ātrumkārbas modelis",
+            "ru": "Модель коробки"
+          },
+          "value": "ZF 6HP26X",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "transmission",
+                "in": [
+                  "automatic-6"
+                ]
+              },
+              {
+                "axis": "drivetrain",
+                "in": [
+                  "xdrive"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              },
+              {
+                "not": {
+                  "axis": "model",
+                  "in": [
+                    "525d"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "key": "model",
+          "label": {
+            "en": "Gearbox model",
+            "lv": "Ātrumkārbas modelis",
+            "ru": "Модель коробки"
+          },
+          "value": "ZF 6HP28",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "transmission",
+                "in": [
+                  "automatic-6"
+                ]
+              },
+              {
+                "axis": "drivetrain",
+                "in": [
+                  "rwd"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              },
+              {
+                "not": {
+                  "axis": "model",
+                  "in": [
+                    "525d"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "key": "model",
+          "label": {
+            "en": "Gearbox model",
+            "lv": "Ātrumkārbas modelis",
+            "ru": "Модель коробки"
+          },
+          "value": "ZF 6HP28X",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "transmission",
+                "in": [
+                  "automatic-6"
+                ]
+              },
+              {
+                "axis": "drivetrain",
+                "in": [
+                  "xdrive"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              },
+              {
+                "not": {
+                  "axis": "model",
+                  "in": [
+                    "525d"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "key": "model",
+          "label": {
+            "en": "Gearbox model",
+            "lv": "Ātrumkārbas modelis",
+            "ru": "Модель коробки"
+          },
+          "value": "ZF S6-37, Getrag GS6-17BG/DG or ZF S6-53",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "note": {
+            "en": "The source lists these manuals but not which engine used which.",
+            "lv": "Avots min šīs kārbas, bet ne to, kurš dzinējs izmantoja kuru.",
+            "ru": "Источник перечисляет эти коробки, но не указывает, с каким двигателем какая."
+          },
+          "appliesWhen": {
+            "axis": "transmission",
+            "in": [
+              "manual-6"
+            ]
+          }
+        },
+        {
+          "key": "model",
+          "label": {
+            "en": "Gearbox model",
+            "lv": "Ātrumkārbas modelis",
+            "ru": "Модель коробки"
+          },
+          "value": "GS6S37BZ or GS6S53BZ (SMG II)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "transmission",
+            "in": [
+              "smg-6"
+            ]
+          }
+        },
+        {
+          "key": "model",
+          "label": {
+            "en": "Gearbox model",
+            "lv": "Ātrumkārbas modelis",
+            "ru": "Модель коробки"
+          },
+          "value": "GS7S47BG (SMG III)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "transmission",
+            "in": [
+              "smg-7"
+            ]
+          }
+        },
+        {
+          "key": "fluid",
+          "label": {
+            "en": "Transmission fluid and capacity",
+            "lv": "Ātrumkārbas eļļa un tilpums",
+            "ru": "Масло и объём КПП"
+          },
+          "status": "missing"
+        }
+      ],
+      "docs": [
+        {
+          "kind": "specification",
+          "title": {
+            "en": "ZF 6HP transmission family",
+            "lv": "ZF 6HP ātrumkārbu saime",
+            "ru": "Семейство коробок ZF 6HP"
+          },
+          "url": "https://en.wikipedia.org/wiki/ZF_6HP_transmission",
+          "lang": "en",
+          "appliesWhen": {
+            "axis": "transmission",
+            "in": [
+              "automatic-6"
+            ]
+          }
+        },
+        {
+          "kind": "repair",
+          "title": {
+            "en": "Transmission repair procedures (select your model)",
+            "lv": "Ātrumkārbas remonta procedūras (izvēlieties modeli)",
+            "ru": "Процедуры ремонта КПП (выберите модель)"
+          },
+          "url": "https://www.newtis.info/",
+          "lang": "en",
+          "sourceId": "newtis"
+        }
+      ]
+    },
+    {
+      "id": "clutch",
+      "systemId": "driveline",
+      "assemblyId": "gearbox",
+      "name": {
+        "en": "Clutch and flywheel",
+        "lv": "Sajūgs un spararats",
+        "ru": "Сцепление и маховик"
+      },
+      "aliases": [
+        "clutch",
+        "dual mass flywheel",
+        "dmf",
+        "сцепление",
+        "маховик",
+        "sajūgs"
+      ],
+      "function": {
+        "en": "Connects and disconnects the engine from the gearbox when changing gear or stopping.",
+        "lv": "Savieno un atvieno dzinēju no ātrumkārbas, pārslēdzot pārnesumus vai apstājoties.",
+        "ru": "Соединяет и разъединяет двигатель и коробку при переключении и остановке."
+      },
+      "location": {
+        "en": "Between the engine and the gearbox, inside the bell housing.",
+        "lv": "Starp dzinēju un ātrumkārbu, sajūga korpusā.",
+        "ru": "Между двигателем и коробкой, в картере сцепления."
+      },
+      "appliesWhen": {
+        "axis": "transmission",
+        "in": [
+          "manual-6",
+          "smg-6",
+          "smg-7"
+        ]
+      },
+      "fitment": {
+        "status": "unverified"
+      },
+      "relations": [
+        {
+          "type": "drives",
+          "target": "transmission"
+        }
+      ]
+    },
+    {
+      "id": "transfer-case",
+      "systemId": "driveline",
+      "assemblyId": "gearbox",
+      "name": {
+        "en": "Transfer case",
+        "lv": "Sadales kārba",
+        "ru": "Раздаточная коробка"
+      },
+      "aliases": [
+        "xdrive",
+        "transfer box",
+        "раздатка",
+        "sadales kārba"
+      ],
+      "function": {
+        "en": "Splits drive between the front and rear axles on xDrive cars.",
+        "lv": "Sadala piedziņu starp priekšējo un aizmugurējo asi xDrive automašīnām.",
+        "ru": "Распределяет момент между передней и задней осью на машинах с xDrive."
+      },
+      "location": {
+        "en": "Bolted to the back of the gearbox.",
+        "lv": "Pieskrūvēta ātrumkārbas aizmugurē.",
+        "ru": "Прикручена к задней части коробки."
+      },
+      "appliesWhen": {
+        "axis": "drivetrain",
+        "in": [
+          "xdrive"
+        ]
+      },
+      "fitment": {
+        "status": "verified",
+        "sourceId": "wikipedia-e60"
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "transmission"
+        },
+        {
+          "type": "drives",
+          "target": "propeller-shaft"
+        },
+        {
+          "type": "drives",
+          "target": "front-differential"
+        }
+      ],
+      "specs": [
+        {
+          "key": "split",
+          "label": {
+            "en": "Default torque split",
+            "lv": "Noklusējuma momenta sadalījums",
+            "ru": "Базовое распределение момента"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "propeller-shaft",
+      "systemId": "driveline",
+      "assemblyId": "shafts",
+      "name": {
+        "en": "Propeller shaft",
+        "lv": "Kardānvārpsta",
+        "ru": "Карданный вал"
+      },
+      "aliases": [
+        "driveshaft",
+        "prop shaft",
+        "кардан",
+        "kardāns"
+      ],
+      "symptomIds": [
+        "vibration-at-speed",
+        "driveline-clunk"
+      ],
+      "function": {
+        "en": "Carries drive from the gearbox to the rear differential.",
+        "lv": "Pārnes piedziņu no ātrumkārbas uz aizmugurējo diferenciāli.",
+        "ru": "Передаёт момент от коробки к заднему дифференциалу."
+      },
+      "location": {
+        "en": "Under the car, along the centre tunnel.",
+        "lv": "Zem automašīnas, gar centrālo tuneli.",
+        "ru": "Под машиной, вдоль центрального тоннеля."
+      },
+      "relations": [
+        {
+          "type": "drives",
+          "target": "rear-differential"
+        }
+      ]
+    },
+    {
+      "id": "rear-differential",
+      "systemId": "driveline",
+      "assemblyId": "final-drives",
+      "name": {
+        "en": "Rear differential",
+        "lv": "Aizmugurējais diferenciālis",
+        "ru": "Задний дифференциал"
+      },
+      "aliases": [
+        "diff",
+        "final drive",
+        "rear axle",
+        "редуктор",
+        "diferenciālis"
+      ],
+      "symptomIds": [
+        "rear-whine",
+        "driveline-clunk"
+      ],
+      "function": {
+        "en": "Turns drive 90 degrees to the rear wheels and lets them turn at different speeds in corners.",
+        "lv": "Pagriež piedziņu par 90 grādiem uz aizmugurējiem riteņiem un ļauj tiem griezties ar dažādu ātrumu pagriezienos.",
+        "ru": "Поворачивает поток мощности на 90° к задним колёсам и позволяет им вращаться с разной скоростью в поворотах."
+      },
+      "location": {
+        "en": "Centre of the rear axle.",
+        "lv": "Aizmugurējās ass centrā.",
+        "ru": "В центре задней оси."
+      },
+      "relations": [
+        {
+          "type": "connects",
+          "target": "rear-brakes"
+        },
+        {
+          "type": "drives",
+          "target": "rear-drive-shafts"
+        },
+        {
+          "type": "mounts",
+          "target": "rear-subframe"
+        }
+      ],
+      "specs": [
+        {
+          "key": "ratio",
+          "label": {
+            "en": "Final drive ratio",
+            "lv": "Galvenā pārvada attiecība",
+            "ru": "Передаточное число главной пары"
+          },
+          "value": "3.23",
+          "status": "verified",
+          "sourceId": "bmw-press-saloon-2005",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B25"
+                ]
+              },
+              {
+                "axis": "transmission",
+                "in": [
+                  "manual-6"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "ratio",
+          "label": {
+            "en": "Final drive ratio",
+            "lv": "Galvenā pārvada attiecība",
+            "ru": "Передаточное число главной пары"
+          },
+          "value": "3.73",
+          "status": "verified",
+          "sourceId": "bmw-press-saloon-2005",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B25"
+                ]
+              },
+              {
+                "axis": "transmission",
+                "in": [
+                  "automatic-6"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "ratio",
+          "label": {
+            "en": "Final drive ratio",
+            "lv": "Galvenā pārvada attiecība",
+            "ru": "Передаточное число главной пары"
+          },
+          "status": "missing",
+          "appliesWhen": {
+            "not": {
+              "all": [
+                {
+                  "axis": "model",
+                  "in": [
+                    "525i"
+                  ]
+                },
+                {
+                  "axis": "engine",
+                  "in": [
+                    "N52B25"
+                  ]
+                },
+                {
+                  "axis": "transmission",
+                  "in": [
+                    "manual-6",
+                    "automatic-6"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "front-differential",
+      "systemId": "driveline",
+      "assemblyId": "final-drives",
+      "name": {
+        "en": "Front differential",
+        "lv": "Priekšējais diferenciālis",
+        "ru": "Передний дифференциал"
+      },
+      "aliases": [
+        "front diff",
+        "front axle drive",
+        "передний редуктор"
+      ],
+      "function": {
+        "en": "Drives the front wheels on xDrive cars.",
+        "lv": "Dzen priekšējos riteņus xDrive automašīnām.",
+        "ru": "Приводит передние колёса на машинах с xDrive."
+      },
+      "location": {
+        "en": "Beside the engine oil pan, at the front axle.",
+        "lv": "Blakus eļļas vācelei, pie priekšējās ass.",
+        "ru": "Рядом с масляным поддоном, у передней оси."
+      },
+      "appliesWhen": {
+        "axis": "drivetrain",
+        "in": [
+          "xdrive"
+        ]
+      },
+      "fitment": {
+        "status": "verified",
+        "sourceId": "wikipedia-e60"
+      },
+      "relations": [
+        {
+          "type": "connects",
+          "target": "front-brakes"
+        }
+      ]
+    }
+  ]
+}

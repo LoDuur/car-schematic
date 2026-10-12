@@ -1,0 +1,777 @@
+{
+  "components": [
+    {
+      "id": "air-filter-housing",
+      "systemId": "intake",
+      "assemblyId": "air-supply",
+      "name": {
+        "en": "Air filter housing",
+        "lv": "Gaisa filtra korpuss",
+        "ru": "Корпус воздушного фильтра"
+      },
+      "aliases": [
+        "air box",
+        "airbox",
+        "air filter",
+        "воздушный фильтр",
+        "gaisa filtrs"
+      ],
+      "function": {
+        "en": "Filters dust from the air before it enters the engine.",
+        "lv": "Attīra gaisu no putekļiem, pirms tas nonāk dzinējā.",
+        "ru": "Очищает воздух от пыли перед подачей в двигатель."
+      },
+      "location": {
+        "en": "Front of the engine bay; exact side depends on the engine.",
+        "lv": "Motortelpas priekšā; puse atkarīga no dzinēja.",
+        "ru": "Спереди моторного отсека; сторона зависит от двигателя."
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "throttle-body"
+        },
+        {
+          "type": "feeds",
+          "target": "turbocharger"
+        },
+        {
+          "type": "feeds",
+          "target": "intake-manifold",
+          "appliesWhen": {
+            "axis": "fuel",
+            "in": [
+              "diesel"
+            ]
+          }
+        }
+      ],
+      "specs": [
+        {
+          "key": "service-interval",
+          "label": {
+            "en": "Replacement interval",
+            "lv": "Nomaiņas intervāls",
+            "ru": "Интервал замены"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "throttle-body",
+      "systemId": "intake",
+      "assemblyId": "air-supply",
+      "name": {
+        "en": "Throttle body",
+        "lv": "Droseļvārsts",
+        "ru": "Дроссельная заслонка"
+      },
+      "aliases": [
+        "throttle",
+        "throttle valve",
+        "drossel",
+        "дроссель"
+      ],
+      "symptomIds": [
+        "rough-idle",
+        "low-power"
+      ],
+      "function": {
+        "en": "Electronically controlled valve that meters air into the intake manifold.",
+        "lv": "Elektroniski vadīts vārsts, kas dozē gaisu ieplūdes kolektorā.",
+        "ru": "Электронная заслонка, дозирующая воздух во впускной коллектор."
+      },
+      "location": {
+        "en": "Inlet of the intake manifold.",
+        "lv": "Ieplūdes kolektora ieejā.",
+        "ru": "На входе впускного коллектора."
+      },
+      "appliesWhen": {
+        "axis": "fuel",
+        "in": [
+          "petrol"
+        ]
+      },
+      "fitment": {
+        "status": "unverified",
+        "note": {
+          "en": "Diesel throttle or swirl flaps are not modelled yet.",
+          "lv": "Dīzeļa droseles un virpuļvārsti vēl nav modelēti.",
+          "ru": "Дизельные заслонки и вихревые заслонки пока не смоделированы."
+        }
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "intake-manifold"
+        }
+      ]
+    },
+    {
+      "id": "intake-manifold",
+      "systemId": "intake",
+      "assemblyId": "air-supply",
+      "name": {
+        "en": "Intake manifold",
+        "lv": "Ieplūdes kolektors",
+        "ru": "Впускной коллектор"
+      },
+      "aliases": [
+        "inlet manifold",
+        "disa",
+        "plenum",
+        "впуск"
+      ],
+      "symptomIds": [
+        "rough-idle"
+      ],
+      "function": {
+        "en": "Distributes intake air evenly to each cylinder.",
+        "lv": "Vienmērīgi sadala ieplūdes gaisu pa cilindriem.",
+        "ru": "Равномерно распределяет воздух по цилиндрам."
+      },
+      "location": {
+        "en": "Intake side of the cylinder head.",
+        "lv": "Cilindru galvas ieplūdes pusē.",
+        "ru": "На впускной стороне головки блока."
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "cylinder-head"
+        }
+      ]
+    },
+    {
+      "id": "turbocharger",
+      "systemId": "intake",
+      "assemblyId": "charging",
+      "name": {
+        "en": "Turbocharger",
+        "lv": "Turbokompresors",
+        "ru": "Турбокомпрессор"
+      },
+      "aliases": [
+        "turbo",
+        "turbine",
+        "boost",
+        "турбина",
+        "turbīna"
+      ],
+      "symptomIds": [
+        "low-power"
+      ],
+      "function": {
+        "en": "Uses exhaust gas energy to compress intake air, so more air and fuel fit in each cylinder.",
+        "lv": "Izmanto izplūdes gāzu enerģiju, lai saspiestu ieplūdes gaisu un cilindros ietilptu vairāk gaisa un degvielas.",
+        "ru": "Использует энергию выхлопа для сжатия воздуха, чтобы в цилиндр поступало больше воздуха и топлива."
+      },
+      "location": {
+        "en": "Exhaust side of the engine, attached to the exhaust manifold.",
+        "lv": "Dzinēja izplūdes pusē, pie izplūdes kolektora.",
+        "ru": "На выпускной стороне, на выпускном коллекторе."
+      },
+      "appliesWhen": {
+        "axis": "engine",
+        "in": [
+          "N54B30",
+          "M47TU2D20",
+          "N47D20",
+          "M57D25TU",
+          "M57D30TU",
+          "M57D30TU2",
+          "M57D30TUTOP",
+          "M57D30TU2TOP"
+        ]
+      },
+      "fitment": {
+        "status": "verified",
+        "sourceId": "wikipedia-e60"
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "intercooler"
+        },
+        {
+          "type": "connects",
+          "target": "exhaust-manifold"
+        }
+      ],
+      "specs": [
+        {
+          "key": "count",
+          "label": {
+            "en": "Number of turbochargers",
+            "lv": "Turbokompresoru skaits",
+            "ru": "Количество турбин"
+          },
+          "value": "2",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N54B30"
+            ]
+          }
+        },
+        {
+          "key": "count",
+          "label": {
+            "en": "Number of turbochargers",
+            "lv": "Turbokompresoru skaits",
+            "ru": "Количество турбин"
+          },
+          "status": "missing",
+          "appliesWhen": {
+            "not": {
+              "axis": "engine",
+              "in": [
+                "N54B30"
+              ]
+            }
+          }
+        },
+        {
+          "key": "boost",
+          "label": {
+            "en": "Boost pressure",
+            "lv": "Uzpūtes spiediens",
+            "ru": "Давление наддува"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "intercooler",
+      "systemId": "intake",
+      "assemblyId": "charging",
+      "name": {
+        "en": "Intercooler",
+        "lv": "Starpdzesētājs",
+        "ru": "Интеркулер"
+      },
+      "aliases": [
+        "charge air cooler",
+        "интеркулер",
+        "охладитель наддувочного воздуха"
+      ],
+      "function": {
+        "en": "Cools the compressed air from the turbocharger to make it denser.",
+        "lv": "Atdzesē turbokompresora saspiesto gaisu, lai tas būtu blīvāks.",
+        "ru": "Охлаждает сжатый турбиной воздух, повышая его плотность."
+      },
+      "location": {
+        "en": "Front of the car, low behind the bumper.",
+        "lv": "Automašīnas priekšā, zemu aiz bufera.",
+        "ru": "Спереди, внизу за бампером."
+      },
+      "appliesWhen": {
+        "axis": "engine",
+        "in": [
+          "N54B30",
+          "M47TU2D20",
+          "N47D20",
+          "M57D25TU",
+          "M57D30TU",
+          "M57D30TU2",
+          "M57D30TUTOP",
+          "M57D30TU2TOP"
+        ]
+      },
+      "fitment": {
+        "status": "unverified",
+        "note": {
+          "en": "Assumed for every turbocharged engine.",
+          "lv": "Pieņemts katram turbo dzinējam.",
+          "ru": "Предполагается для всех турбомоторов."
+        }
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "intake-manifold",
+          "appliesWhen": {
+            "axis": "fuel",
+            "in": [
+              "diesel"
+            ]
+          }
+        },
+        {
+          "type": "feeds",
+          "target": "throttle-body"
+        }
+      ]
+    },
+    {
+      "id": "fuel-tank",
+      "systemId": "fuel",
+      "assemblyId": "fuel-storage",
+      "name": {
+        "en": "Fuel tank",
+        "lv": "Degvielas tvertne",
+        "ru": "Топливный бак"
+      },
+      "aliases": [
+        "tank",
+        "petrol tank",
+        "бак",
+        "bāka"
+      ],
+      "function": {
+        "en": "Stores fuel.",
+        "lv": "Uzglabā degvielu.",
+        "ru": "Хранит топливо."
+      },
+      "location": {
+        "en": "Under the rear seat, ahead of the rear axle.",
+        "lv": "Zem aizmugurējā sēdekļa, pirms aizmugurējās ass.",
+        "ru": "Под задним сиденьем, перед задней осью."
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "fuel-pump"
+        }
+      ],
+      "specs": [
+        {
+          "key": "capacity",
+          "label": {
+            "en": "Capacity",
+            "lv": "Tilpums",
+            "ru": "Объём"
+          },
+          "value": "approx. 70",
+          "unit": "L",
+          "status": "verified",
+          "sourceId": "bmw-press-saloon-2005",
+          "appliesWhen": {
+            "axis": "fuel",
+            "in": [
+              "petrol"
+            ]
+          }
+        },
+        {
+          "key": "capacity",
+          "label": {
+            "en": "Capacity",
+            "lv": "Tilpums",
+            "ru": "Объём"
+          },
+          "status": "missing",
+          "appliesWhen": {
+            "axis": "fuel",
+            "in": [
+              "diesel"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fuel-pump",
+      "systemId": "fuel",
+      "assemblyId": "fuel-storage",
+      "name": {
+        "en": "In-tank fuel pump",
+        "lv": "Degvielas sūknis tvertnē",
+        "ru": "Топливный насос в баке"
+      },
+      "aliases": [
+        "fuel pump",
+        "low pressure pump",
+        "lift pump",
+        "бензонасос",
+        "топливный насос",
+        "degvielas sūknis"
+      ],
+      "symptomIds": [
+        "hard-start",
+        "low-power"
+      ],
+      "function": {
+        "en": "Electric pump that sends fuel from the tank to the engine.",
+        "lv": "Elektrisks sūknis, kas padod degvielu no tvertnes uz dzinēju.",
+        "ru": "Электронасос, подающий топливо из бака к двигателю."
+      },
+      "location": {
+        "en": "Inside the fuel tank.",
+        "lv": "Degvielas tvertnē.",
+        "ru": "Внутри топливного бака."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "fuel-tank"
+        },
+        {
+          "type": "feeds",
+          "target": "fuel-lines"
+        }
+      ],
+      "specs": [
+        {
+          "key": "pressure",
+          "label": {
+            "en": "Supply pressure",
+            "lv": "Padeves spiediens",
+            "ru": "Давление подачи"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "high-pressure-pump",
+      "systemId": "fuel",
+      "assemblyId": "injection",
+      "name": {
+        "en": "High-pressure fuel pump",
+        "lv": "Augstspiediena degvielas sūknis",
+        "ru": "Топливный насос высокого давления"
+      },
+      "aliases": [
+        "hpfp",
+        "hp pump",
+        "common rail pump",
+        "ТНВД",
+        "augstspiediena sūknis"
+      ],
+      "function": {
+        "en": "Engine-driven pump that raises fuel to injection pressure for direct injection or common rail.",
+        "lv": "Dzinēja dzīts sūknis, kas paaugstina degvielas spiedienu tiešajai iesmidzināšanai vai common rail sistēmai.",
+        "ru": "Насос с приводом от двигателя, создающий давление для непосредственного впрыска или Common Rail."
+      },
+      "location": {
+        "en": "On the engine, driven by a camshaft or the timing drive.",
+        "lv": "Uz dzinēja, dzīts no sadales vārpstas vai gāzu sadales piedziņas.",
+        "ru": "На двигателе, привод от распредвала или привода ГРМ."
+      },
+      "appliesWhen": {
+        "axis": "engine",
+        "in": [
+          "N43B20",
+          "N53B25",
+          "N53B30",
+          "N54B30",
+          "M47TU2D20",
+          "N47D20",
+          "M57D25TU",
+          "M57D30TU",
+          "M57D30TU2",
+          "M57D30TUTOP",
+          "M57D30TU2TOP"
+        ]
+      },
+      "fitment": {
+        "status": "unverified",
+        "note": {
+          "en": "Direct-injection petrol engines and common-rail diesels. Not checked against a cited source.",
+          "lv": "Tiešās iesmidzināšanas benzīna un common rail dīzeļdzinēji. Nav pārbaudīts pret avotu.",
+          "ru": "Бензиновые с непосредственным впрыском и дизели Common Rail. Не сверено с источником."
+        }
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "fuel-injectors"
+        },
+        {
+          "type": "mounts",
+          "target": "cylinder-head"
+        }
+      ],
+      "specs": [
+        {
+          "key": "pressure",
+          "label": {
+            "en": "Maximum rail pressure",
+            "lv": "Maksimālais sliedes spiediens",
+            "ru": "Максимальное давление в рампе"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "fuel-injectors",
+      "systemId": "fuel",
+      "assemblyId": "injection",
+      "name": {
+        "en": "Fuel injectors",
+        "lv": "Degvielas sprauslas",
+        "ru": "Топливные форсунки"
+      },
+      "aliases": [
+        "injector",
+        "injectors",
+        "форсунка",
+        "inžektors",
+        "sprausla"
+      ],
+      "symptomIds": [
+        "misfire",
+        "rough-idle",
+        "fuel-smell"
+      ],
+      "function": {
+        "en": "Spray a metered amount of fuel into the intake port or directly into the cylinder.",
+        "lv": "Iesmidzina noteiktu degvielas daudzumu ieplūdes kanālā vai tieši cilindrā.",
+        "ru": "Впрыскивают дозированное топливо во впускной канал или прямо в цилиндр."
+      },
+      "location": {
+        "en": "Cylinder head or intake manifold, one per cylinder.",
+        "lv": "Cilindru galvā vai ieplūdes kolektorā, viena katram cilindram.",
+        "ru": "В головке блока или впускном коллекторе, по одной на цилиндр."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "cylinder-head"
+        }
+      ],
+      "specs": [
+        {
+          "key": "injection-type",
+          "label": {
+            "en": "Injection type",
+            "lv": "Iesmidzināšanas veids",
+            "ru": "Тип впрыска"
+          },
+          "value": "Common rail diesel",
+          "status": "unverified",
+          "appliesWhen": {
+            "axis": "fuel",
+            "in": [
+              "diesel"
+            ]
+          }
+        },
+        {
+          "key": "injection-type",
+          "label": {
+            "en": "Injection type",
+            "lv": "Iesmidzināšanas veids",
+            "ru": "Тип впрыска"
+          },
+          "value": "Petrol direct injection",
+          "status": "unverified",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N43B20",
+              "N53B25",
+              "N53B30",
+              "N54B30"
+            ]
+          }
+        },
+        {
+          "key": "injection-type",
+          "label": {
+            "en": "Injection type",
+            "lv": "Iesmidzināšanas veids",
+            "ru": "Тип впрыска"
+          },
+          "value": "Port injection",
+          "status": "unverified",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M54B22",
+              "M54B25",
+              "M54B30",
+              "N46B20",
+              "N52B25",
+              "N52B30",
+              "N62B40",
+              "N62B44",
+              "N62B48",
+              "S85B50"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ignition-coils",
+      "systemId": "ignition",
+      "assemblyId": "ignition-system",
+      "name": {
+        "en": "Ignition coils",
+        "lv": "Aizdedzes spoles",
+        "ru": "Катушки зажигания"
+      },
+      "aliases": [
+        "coil",
+        "coil pack",
+        "катушка",
+        "spole"
+      ],
+      "symptomIds": [
+        "misfire",
+        "rough-idle",
+        "engine-light"
+      ],
+      "function": {
+        "en": "Turn 12 V into the high voltage that fires the spark plugs. One coil per cylinder.",
+        "lv": "Pārveido 12 V augstspriegumā, kas rada dzirksteli svecēs. Viena spole katram cilindram.",
+        "ru": "Преобразуют 12 В в высокое напряжение для свечей. Одна катушка на цилиндр."
+      },
+      "location": {
+        "en": "On top of the cylinder head, above each spark plug.",
+        "lv": "Cilindru galvas augšā, virs katras sveces.",
+        "ru": "Сверху головки блока, над каждой свечой."
+      },
+      "appliesWhen": {
+        "axis": "fuel",
+        "in": [
+          "petrol"
+        ]
+      },
+      "fitment": {
+        "status": "unverified"
+      },
+      "relations": [
+        {
+          "type": "drives",
+          "target": "spark-plugs"
+        },
+        {
+          "type": "mounts",
+          "target": "cylinder-head"
+        }
+      ]
+    },
+    {
+      "id": "spark-plugs",
+      "systemId": "ignition",
+      "assemblyId": "ignition-system",
+      "name": {
+        "en": "Spark plugs",
+        "lv": "Aizdedzes sveces",
+        "ru": "Свечи зажигания"
+      },
+      "aliases": [
+        "plugs",
+        "spark plug",
+        "свеча",
+        "sveces"
+      ],
+      "symptomIds": [
+        "misfire",
+        "rough-idle",
+        "hard-start"
+      ],
+      "function": {
+        "en": "Create the spark that ignites the air and fuel mixture.",
+        "lv": "Rada dzirksteli, kas aizdedzina gaisa un degvielas maisījumu.",
+        "ru": "Создают искру, воспламеняющую топливовоздушную смесь."
+      },
+      "location": {
+        "en": "Threaded into the cylinder head, one per cylinder.",
+        "lv": "Ieskrūvētas cilindru galvā, viena katram cilindram.",
+        "ru": "Вкручены в головку блока, по одной на цилиндр."
+      },
+      "appliesWhen": {
+        "axis": "fuel",
+        "in": [
+          "petrol"
+        ]
+      },
+      "fitment": {
+        "status": "unverified",
+        "note": {
+          "en": "Every petrol engine uses spark ignition.",
+          "lv": "Visi benzīna dzinēji izmanto dzirksteļaizdedzi.",
+          "ru": "Все бензиновые двигатели имеют искровое зажигание."
+        }
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "cylinder-head"
+        }
+      ],
+      "specs": [
+        {
+          "key": "gap",
+          "label": {
+            "en": "Electrode gap",
+            "lv": "Elektrodu sprauga",
+            "ru": "Зазор электродов"
+          },
+          "status": "missing"
+        },
+        {
+          "key": "interval",
+          "label": {
+            "en": "Replacement interval",
+            "lv": "Nomaiņas intervāls",
+            "ru": "Интервал замены"
+          },
+          "status": "missing"
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Tightening torque",
+            "lv": "Pievilkšanas moments",
+            "ru": "Момент затяжки"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "glow-plugs",
+      "systemId": "ignition",
+      "assemblyId": "glow-system",
+      "name": {
+        "en": "Glow plugs",
+        "lv": "Kvēlsveces",
+        "ru": "Свечи накаливания"
+      },
+      "aliases": [
+        "glow plug",
+        "preheating",
+        "свеча накаливания",
+        "kvēlsvece"
+      ],
+      "symptomIds": [
+        "cold-start"
+      ],
+      "function": {
+        "en": "Heat the combustion chamber so a cold diesel engine starts and runs smoothly.",
+        "lv": "Uzsilda sadegšanas kameru, lai auksts dīzeļdzinējs iedarbotos un strādātu vienmērīgi.",
+        "ru": "Подогревают камеру сгорания для пуска и ровной работы холодного дизеля."
+      },
+      "location": {
+        "en": "In the cylinder head, one per cylinder.",
+        "lv": "Cilindru galvā, viena katram cilindram.",
+        "ru": "В головке блока, по одной на цилиндр."
+      },
+      "appliesWhen": {
+        "axis": "fuel",
+        "in": [
+          "diesel"
+        ]
+      },
+      "fitment": {
+        "status": "unverified"
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "cylinder-head"
+        }
+      ]
+    }
+  ]
+}

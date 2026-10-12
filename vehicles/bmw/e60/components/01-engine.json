@@ -1,0 +1,3314 @@
+{
+  "components": [
+    {
+      "id": "engine-block",
+      "systemId": "engine",
+      "assemblyId": "engine-core",
+      "name": {
+        "en": "Engine block",
+        "lv": "Dzinēja bloks",
+        "ru": "Блок цилиндров"
+      },
+      "aliases": [
+        "engine",
+        "motor",
+        "crankcase",
+        "short block",
+        "dzinējs",
+        "двигатель",
+        "мотор"
+      ],
+      "function": {
+        "en": "Holds the cylinders, pistons and crankshaft. Turns combustion pressure into crankshaft rotation.",
+        "lv": "Satur cilindrus, virzuļus un kloķvārpstu. Pārvērš sadegšanas spiedienu kloķvārpstas griešanā.",
+        "ru": "Содержит цилиндры, поршни и коленчатый вал. Преобразует давление сгорания во вращение коленвала."
+      },
+      "location": {
+        "en": "Engine bay, mounted lengthwise behind the front axle.",
+        "lv": "Motortelpā, novietots gareniski aiz priekšējās ass.",
+        "ru": "В моторном отсеке, установлен продольно за передней осью."
+      },
+      "relations": [
+        {
+          "type": "drives",
+          "target": "transmission"
+        },
+        {
+          "type": "connects",
+          "target": "clutch"
+        },
+        {
+          "type": "connects",
+          "target": "exhaust-manifold"
+        },
+        {
+          "type": "drives",
+          "target": "accessory-belt-drive"
+        },
+        {
+          "type": "mounts",
+          "target": "engine-mounts"
+        }
+      ],
+      "docs": [
+        {
+          "kind": "specification",
+          "title": {
+            "en": "M54 engine family overview",
+            "lv": "M54 dzinēju saimes apraksts",
+            "ru": "Обзор семейства двигателей M54"
+          },
+          "url": "https://en.wikipedia.org/wiki/BMW_M54",
+          "lang": "en",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M54B22",
+              "M54B25",
+              "M54B30"
+            ]
+          }
+        },
+        {
+          "kind": "specification",
+          "title": {
+            "en": "N46 engine family overview",
+            "lv": "N46 dzinēju saimes apraksts",
+            "ru": "Обзор семейства двигателей N46"
+          },
+          "url": "https://en.wikipedia.org/wiki/BMW_N46",
+          "lang": "en",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N46B20"
+            ]
+          }
+        },
+        {
+          "kind": "specification",
+          "title": {
+            "en": "N43 engine family overview",
+            "lv": "N43 dzinēju saimes apraksts",
+            "ru": "Обзор семейства двигателей N43"
+          },
+          "url": "https://en.wikipedia.org/wiki/BMW_N43",
+          "lang": "en",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N43B20"
+            ]
+          }
+        },
+        {
+          "kind": "specification",
+          "title": {
+            "en": "N52 engine family overview",
+            "lv": "N52 dzinēju saimes apraksts",
+            "ru": "Обзор семейства двигателей N52"
+          },
+          "url": "https://en.wikipedia.org/wiki/BMW_N52",
+          "lang": "en",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B25",
+              "N52B30"
+            ]
+          }
+        },
+        {
+          "kind": "specification",
+          "title": {
+            "en": "N53 engine family overview",
+            "lv": "N53 dzinēju saimes apraksts",
+            "ru": "Обзор семейства двигателей N53"
+          },
+          "url": "https://en.wikipedia.org/wiki/BMW_N53",
+          "lang": "en",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N53B25",
+              "N53B30"
+            ]
+          }
+        },
+        {
+          "kind": "specification",
+          "title": {
+            "en": "N54 engine family overview",
+            "lv": "N54 dzinēju saimes apraksts",
+            "ru": "Обзор семейства двигателей N54"
+          },
+          "url": "https://en.wikipedia.org/wiki/BMW_N54",
+          "lang": "en",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N54B30"
+            ]
+          }
+        },
+        {
+          "kind": "specification",
+          "title": {
+            "en": "N62 engine family overview",
+            "lv": "N62 dzinēju saimes apraksts",
+            "ru": "Обзор семейства двигателей N62"
+          },
+          "url": "https://en.wikipedia.org/wiki/BMW_N62",
+          "lang": "en",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N62B40",
+              "N62B44",
+              "N62B48"
+            ]
+          }
+        },
+        {
+          "kind": "specification",
+          "title": {
+            "en": "S85 engine family overview",
+            "lv": "S85 dzinēju saimes apraksts",
+            "ru": "Обзор семейства двигателей S85"
+          },
+          "url": "https://en.wikipedia.org/wiki/BMW_S85",
+          "lang": "en",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "S85B50"
+            ]
+          }
+        },
+        {
+          "kind": "specification",
+          "title": {
+            "en": "M47 engine family overview",
+            "lv": "M47 dzinēju saimes apraksts",
+            "ru": "Обзор семейства двигателей M47"
+          },
+          "url": "https://en.wikipedia.org/wiki/BMW_M47",
+          "lang": "en",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M47TU2D20"
+            ]
+          }
+        },
+        {
+          "kind": "specification",
+          "title": {
+            "en": "N47 engine family overview",
+            "lv": "N47 dzinēju saimes apraksts",
+            "ru": "Обзор семейства двигателей N47"
+          },
+          "url": "https://en.wikipedia.org/wiki/BMW_N47",
+          "lang": "en",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N47D20"
+            ]
+          }
+        },
+        {
+          "kind": "specification",
+          "title": {
+            "en": "M57 engine family overview",
+            "lv": "M57 dzinēju saimes apraksts",
+            "ru": "Обзор семейства двигателей M57"
+          },
+          "url": "https://en.wikipedia.org/wiki/BMW_M57",
+          "lang": "en",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M57D25TU",
+              "M57D30TU",
+              "M57D30TU2",
+              "M57D30TUTOP",
+              "M57D30TU2TOP"
+            ]
+          }
+        },
+        {
+          "kind": "maintenance",
+          "title": {
+            "en": "Engine repair procedures (select your model)",
+            "lv": "Dzinēja remonta procedūras (izvēlieties modeli)",
+            "ru": "Процедуры ремонта двигателя (выберите модель)"
+          },
+          "url": "https://www.newtis.info/",
+          "lang": "en",
+          "sourceId": "newtis"
+        }
+      ],
+      "specs": [
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "2,171 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M54B22"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I6",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M54B22"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "2,494 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M54B25"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I6",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M54B25"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "2,979 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M54B30"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I6",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M54B30"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "1,995 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N46B20"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I4",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N46B20"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "1,995 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N43B20"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I4",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N43B20"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "2,497 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B25"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I6",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B25"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "2,996 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B30"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I6",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B30"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "2,497 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N53B25"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I6",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N53B25"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "2,996 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N53B30"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I6",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N53B30"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "2,979 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N54B30"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I6 twin-turbo",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N54B30"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "4,000 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N62B40"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "V8",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N62B40"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "4,398 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N62B44"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "V8",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N62B44"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "4,799 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N62B48"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "V8",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N62B48"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "4,999 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "S85B50"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "V10",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "S85B50"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "1,995 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M47TU2D20"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I4 turbo",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M47TU2D20"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "1,995 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N47D20"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I4 turbo",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N47D20"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "2,497 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M57D25TU"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I6 turbo",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M57D25TU"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "2,993 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M57D30TU"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I6 turbo",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M57D30TU"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "2,993 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M57D30TU2"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I6 turbo",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M57D30TU2"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "2,993 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M57D30TUTOP"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I6 turbo",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M57D30TUTOP"
+            ]
+          }
+        },
+        {
+          "key": "displacement",
+          "label": {
+            "en": "Displacement",
+            "lv": "Darba tilpums",
+            "ru": "Рабочий объём"
+          },
+          "value": "2,993 cc",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M57D30TU2TOP"
+            ]
+          }
+        },
+        {
+          "key": "layout",
+          "label": {
+            "en": "Layout",
+            "lv": "Izkārtojums",
+            "ru": "Компоновка"
+          },
+          "value": "I6 turbo",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "M57D30TU2TOP"
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "125 kW (170 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "520i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M54B22"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "210 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "520i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M54B22"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "115 kW (156 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "520i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N46B20"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "200 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "520i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N46B20"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "125 kW (170 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "520i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N43B20"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "210 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "520i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N43B20"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "130 kW (177 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "523i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B25"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "230 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "523i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B25"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "140 kW (190 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "523i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N53B25"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "240 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "523i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N53B25"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "141 kW (192 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M54B25"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "237 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M54B25"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "160 kW (218 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B25"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "250 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B25"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "160 kW (218 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N53B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "270 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N53B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "172 kW (234 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "528i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "270 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "528i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "170 kW (231 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "530i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M54B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "300 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "530i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M54B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "190 kW (258 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "530i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "300 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "530i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "200 kW (272 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "530i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N53B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "320 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "530i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N53B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "225 kW (306 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "535i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N54B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "400 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "535i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N54B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "225 kW (306 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "540i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N62B40"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "390 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "540i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N62B40"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "245 kW (333 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "545i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N62B44"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "450 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "545i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N62B44"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "270 kW (367 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "550i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N62B48"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "490 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "550i"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N62B48"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "373 kW (507 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "m5"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "S85B50"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "520 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "m5"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "S85B50"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "120 kW (163 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "520d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M47TU2D20"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "350 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "520d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M47TU2D20"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "130 kW (177 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "520d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N47D20"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "350 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "520d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "N47D20"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "130 kW (177 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D25TU"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2004",
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "400 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D25TU"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2004",
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "145 kW (197 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU2"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "400 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "525d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU2"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "160 kW (218 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "530d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "500 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "530d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "170 kW (231 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "530d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU2"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "500 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "530d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU2"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "173 kW (235 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "530d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU2"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "500 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "530d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU2"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "200 kW (272 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "535d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TUTOP"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2004",
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "560 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "535d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TUTOP"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2004",
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "power",
+          "label": {
+            "en": "Rated power",
+            "lv": "Nominālā jauda",
+            "ru": "Номинальная мощность"
+          },
+          "value": "210 kW (286 PS)",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "535d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU2TOP"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "torque",
+          "label": {
+            "en": "Peak torque",
+            "lv": "Maksimālais griezes moments",
+            "ru": "Максимальный крутящий момент"
+          },
+          "value": "580 N·m",
+          "status": "verified",
+          "sourceId": "wikipedia-e60",
+          "appliesWhen": {
+            "all": [
+              {
+                "axis": "model",
+                "in": [
+                  "535d"
+                ]
+              },
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU2TOP"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "key": "oil-spec",
+          "label": {
+            "en": "Approved oil specification",
+            "lv": "Apstiprinātā eļļas specifikācija",
+            "ru": "Допуск моторного масла"
+          },
+          "status": "missing"
+        },
+        {
+          "key": "oil-capacity",
+          "label": {
+            "en": "Engine oil capacity",
+            "lv": "Motoreļļas tilpums",
+            "ru": "Объём моторного масла"
+          },
+          "value": "6.5",
+          "unit": "L",
+          "status": "verified",
+          "sourceId": "bmw-press-saloon-2005",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B25",
+              "N52B30"
+            ]
+          }
+        },
+        {
+          "key": "oil-capacity",
+          "label": {
+            "en": "Engine oil capacity",
+            "lv": "Motoreļļas tilpums",
+            "ru": "Объём моторного масла"
+          },
+          "status": "missing",
+          "appliesWhen": {
+            "not": {
+              "axis": "engine",
+              "in": [
+                "N52B25",
+                "N52B30"
+              ]
+            }
+          }
+        },
+        {
+          "key": "bore-stroke",
+          "label": {
+            "en": "Bore x stroke",
+            "lv": "Cilindra diametrs x gājiens",
+            "ru": "Диаметр x ход поршня"
+          },
+          "value": "82 x 78.8",
+          "unit": "mm",
+          "status": "verified",
+          "sourceId": "wikipedia-n52",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B25"
+            ]
+          }
+        },
+        {
+          "key": "bore-stroke",
+          "label": {
+            "en": "Bore x stroke",
+            "lv": "Cilindra diametrs x gājiens",
+            "ru": "Диаметр x ход поршня"
+          },
+          "value": "85 x 88",
+          "unit": "mm",
+          "status": "verified",
+          "sourceId": "wikipedia-n52",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B30"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cylinder-head",
+      "systemId": "engine",
+      "assemblyId": "engine-core",
+      "name": {
+        "en": "Cylinder head",
+        "lv": "Cilindru galva",
+        "ru": "Головка блока цилиндров"
+      },
+      "aliases": [
+        "head",
+        "camshaft",
+        "valves",
+        "ГБЦ",
+        "распредвал",
+        "sadales vārpsta"
+      ],
+      "function": {
+        "en": "Closes the top of the cylinders and carries the valves and camshafts that control gas flow in and out.",
+        "lv": "Noslēdz cilindrus no augšas un satur vārstus un sadales vārpstas, kas vada gāzu plūsmu.",
+        "ru": "Закрывает цилиндры сверху и несёт клапаны и распредвалы, управляющие газообменом."
+      },
+      "location": {
+        "en": "On top of the engine block.",
+        "lv": "Virs dzinēja bloka.",
+        "ru": "Над блоком цилиндров."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "engine-block"
+        },
+        {
+          "type": "connects",
+          "target": "intake-manifold"
+        },
+        {
+          "type": "connects",
+          "target": "exhaust-manifold"
+        }
+      ],
+      "specs": [
+        {
+          "key": "valve-clearance",
+          "label": {
+            "en": "Valve clearance",
+            "lv": "Vārstu sprauga",
+            "ru": "Тепловой зазор клапанов"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "valvetronic-motor",
+      "systemId": "engine",
+      "assemblyId": "valve-control",
+      "name": {
+        "en": "Valvetronic motor",
+        "lv": "Valvetronic motors",
+        "ru": "Электромотор Valvetronic"
+      },
+      "aliases": [
+        "valvetronic",
+        "eccentric shaft motor",
+        "variable valve lift",
+        "вальветроник"
+      ],
+      "symptomIds": [
+        "rough-idle",
+        "low-power",
+        "engine-light"
+      ],
+      "function": {
+        "en": "Changes intake valve lift to control engine load, so the throttle can stay mostly open.",
+        "lv": "Maina ieplūdes vārstu pacēlumu, lai regulētu dzinēja slodzi, un droseļvārsts var palikt gandrīz atvērts.",
+        "ru": "Изменяет ход впускных клапанов для управления нагрузкой, поэтому дроссель почти всегда открыт."
+      },
+      "location": {
+        "en": "On the cylinder head, driving the eccentric shaft.",
+        "lv": "Uz cilindru galvas, griež ekscentra vārpstu.",
+        "ru": "На головке блока, приводит эксцентриковый вал."
+      },
+      "appliesWhen": {
+        "axis": "engine",
+        "in": [
+          "N46B20",
+          "N52B25",
+          "N52B30",
+          "N62B40",
+          "N62B44",
+          "N62B48"
+        ]
+      },
+      "fitment": {
+        "status": "unverified",
+        "note": {
+          "en": "Fitment by engine code is from general engine knowledge and is not yet checked against a cited source.",
+          "lv": "Uzstādīšana pēc dzinēja koda balstīta vispārējās zināšanās un vēl nav pārbaudīta pret avotu.",
+          "ru": "Применимость по коду двигателя основана на общих знаниях и ещё не сверена с источником."
+        }
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "cylinder-head"
+        }
+      ],
+      "specs": [
+        {
+          "key": "adaptation",
+          "label": {
+            "en": "Adaptation after replacement",
+            "lv": "Adaptācija pēc nomaiņas",
+            "ru": "Адаптация после замены"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "vanos-solenoids",
+      "systemId": "engine",
+      "assemblyId": "valve-control",
+      "name": {
+        "en": "VANOS solenoids",
+        "lv": "VANOS solenoīdi",
+        "ru": "Электромагнитные клапаны VANOS"
+      },
+      "aliases": [
+        "vanos",
+        "camshaft timing solenoid",
+        "variable valve timing",
+        "ванос"
+      ],
+      "symptomIds": [
+        "rough-idle",
+        "low-power",
+        "engine-light"
+      ],
+      "function": {
+        "en": "Direct oil pressure to the camshaft adjusters to change valve timing.",
+        "lv": "Vada eļļas spiedienu uz sadales vārpstu regulatoriem, lai mainītu gāzu sadales fāzes.",
+        "ru": "Направляют давление масла к фазовращателям для изменения фаз газораспределения."
+      },
+      "location": {
+        "en": "Front of the cylinder head.",
+        "lv": "Cilindru galvas priekšpusē.",
+        "ru": "Спереди на головке блока."
+      },
+      "appliesWhen": {
+        "axis": "fuel",
+        "in": [
+          "petrol"
+        ]
+      },
+      "fitment": {
+        "status": "unverified",
+        "note": {
+          "en": "Assumed for all petrol engines in this range. Not checked against a cited source.",
+          "lv": "Pieņemts visiem šīs saimes benzīna dzinējiem. Nav pārbaudīts pret avotu.",
+          "ru": "Предполагается для всех бензиновых двигателей линейки. Не сверено с источником."
+        }
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "cylinder-head"
+        }
+      ]
+    },
+    {
+      "id": "oil-filter-housing",
+      "systemId": "engine",
+      "assemblyId": "lubrication",
+      "name": {
+        "en": "Oil filter housing",
+        "lv": "Eļļas filtra korpuss",
+        "ru": "Корпус масляного фильтра"
+      },
+      "aliases": [
+        "oil filter",
+        "oil cooler gasket",
+        "масляный фильтр",
+        "eļļas filtrs"
+      ],
+      "symptomIds": [
+        "oil-leak"
+      ],
+      "function": {
+        "en": "Holds the replaceable oil filter element and routes engine oil through it.",
+        "lv": "Tur maināmo eļļas filtra elementu un novada motoreļļu caur to.",
+        "ru": "Держит сменный фильтрующий элемент и пропускает через него моторное масло."
+      },
+      "location": {
+        "en": "Side of the engine block; exact position depends on the engine.",
+        "lv": "Dzinēja bloka sānos; precīza vieta atkarīga no dzinēja.",
+        "ru": "Сбоку блока цилиндров; точное место зависит от двигателя."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "engine-block"
+        },
+        {
+          "type": "feeds",
+          "target": "cylinder-head"
+        }
+      ],
+      "specs": [
+        {
+          "key": "filter-part",
+          "label": {
+            "en": "Filter element part number",
+            "lv": "Filtra elementa numurs",
+            "ru": "Номер фильтрующего элемента"
+          },
+          "status": "missing"
+        }
+      ],
+      "docs": [
+        {
+          "kind": "specification",
+          "title": {
+            "en": "Parts diagram: lubrication system",
+            "lv": "Detaļu shēma: eļļošanas sistēma",
+            "ru": "Схема деталей: система смазки"
+          },
+          "url": "https://www.realoem.com/",
+          "lang": "en",
+          "sourceId": "realoem"
+        }
+      ]
+    },
+    {
+      "id": "oil-pan",
+      "systemId": "engine",
+      "assemblyId": "engine-core",
+      "name": {
+        "en": "Oil pan",
+        "lv": "Eļļas vācele",
+        "ru": "Масляный поддон"
+      },
+      "aliases": [
+        "sump",
+        "oil sump",
+        "картер",
+        "eļļas karteris"
+      ],
+      "symptomIds": [
+        "oil-leak"
+      ],
+      "function": {
+        "en": "Stores engine oil below the crankshaft. The oil pump draws from here.",
+        "lv": "Uzglabā motoreļļu zem kloķvārpstas. Eļļas sūknis ņem eļļu no šejienes.",
+        "ru": "Хранит моторное масло под коленвалом. Масляный насос забирает масло отсюда."
+      },
+      "location": {
+        "en": "Bottom of the engine block.",
+        "lv": "Dzinēja bloka apakšā.",
+        "ru": "Внизу блока цилиндров."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "engine-block"
+        },
+        {
+          "type": "feeds",
+          "target": "oil-filter-housing"
+        }
+      ]
+    },
+    {
+      "id": "crankshaft-sensor",
+      "systemId": "engine",
+      "assemblyId": "engine-electronics",
+      "name": {
+        "en": "Crankshaft position sensor",
+        "lv": "Kloķvārpstas stāvokļa sensors",
+        "ru": "Датчик положения коленвала"
+      },
+      "aliases": [
+        "ckp",
+        "crank sensor",
+        "engine speed sensor",
+        "ДПКВ"
+      ],
+      "symptomIds": [
+        "hard-start",
+        "engine-light"
+      ],
+      "function": {
+        "en": "Reports crankshaft speed and position so the engine control unit can time injection and ignition.",
+        "lv": "Ziņo kloķvārpstas ātrumu un stāvokli, lai vadības bloks noteiktu iesmidzināšanas un aizdedzes brīdi.",
+        "ru": "Сообщает скорость и положение коленвала, чтобы блок управления рассчитал впрыск и зажигание."
+      },
+      "location": {
+        "en": "Lower rear of the engine block, near the flywheel.",
+        "lv": "Dzinēja bloka apakšējā aizmugurē, pie spararata.",
+        "ru": "Внизу сзади блока, возле маховика."
+      },
+      "relations": [
+        {
+          "type": "monitors",
+          "target": "engine-block"
+        },
+        {
+          "type": "connects",
+          "target": "engine-control-unit"
+        }
+      ]
+    },
+    {
+      "id": "engine-control-unit",
+      "systemId": "engine",
+      "assemblyId": "engine-electronics",
+      "name": {
+        "en": "Engine control unit (DME / DDE)",
+        "lv": "Dzinēja vadības bloks (DME / DDE)",
+        "ru": "Блок управления двигателем (DME / DDE)"
+      },
+      "aliases": [
+        "ecu",
+        "dme",
+        "dde",
+        "ecm",
+        "engine computer",
+        "ЭБУ",
+        "мозги"
+      ],
+      "function": {
+        "en": "Reads engine sensors and controls fuel injection, ignition, valve timing and charging. DME is the petrol unit, DDE the diesel unit.",
+        "lv": "Nolasa dzinēja sensorus un vada iesmidzināšanu, aizdedzi, fāzes un uzpūti. DME ir benzīna, DDE dīzeļa bloks.",
+        "ru": "Считывает датчики и управляет впрыском, зажиганием, фазами и наддувом. DME — бензиновый блок, DDE — дизельный."
+      },
+      "location": {
+        "en": "Electronics box at the rear of the engine bay; side not confirmed.",
+        "lv": "Elektronikas kārbā motortelpas aizmugurē; puse nav apstiprināta.",
+        "ru": "В электронном боксе в задней части моторного отсека; сторона не подтверждена."
+      },
+      "relations": [
+        {
+          "type": "controls",
+          "target": "fuel-injectors"
+        },
+        {
+          "type": "controls",
+          "target": "ignition-coils"
+        },
+        {
+          "type": "controls",
+          "target": "glow-plugs"
+        },
+        {
+          "type": "controls",
+          "target": "valvetronic-motor"
+        },
+        {
+          "type": "controls",
+          "target": "vanos-solenoids"
+        },
+        {
+          "type": "controls",
+          "target": "throttle-body"
+        },
+        {
+          "type": "controls",
+          "target": "high-pressure-pump"
+        },
+        {
+          "type": "controls",
+          "target": "turbocharger"
+        },
+        {
+          "type": "controls",
+          "target": "electric-fan"
+        },
+        {
+          "type": "controls",
+          "target": "coolant-pump",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B25",
+              "N52B30",
+              "N53B25",
+              "N53B30",
+              "N54B30"
+            ]
+          }
+        },
+        {
+          "type": "connects",
+          "target": "car-access-system"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "id": "wikipedia-e60",
+      "title": "BMW 5 Series (E60)",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BMW_5_Series_(E60)",
+      "note": "Secondary source. Used for production years, dimensions, engine line-up, outputs and transmission families. Checked October 2026."
+    },
+    {
+      "id": "realoem",
+      "title": "RealOEM BMW parts catalogue",
+      "publisher": "RealOEM",
+      "url": "https://www.realoem.com/",
+      "note": "Parts diagrams by VIN or model. Select the E60 or E61 and the exact model to find part numbers."
+    },
+    {
+      "id": "newtis",
+      "title": "BMW TIS repair information (unofficial mirror)",
+      "publisher": "newTIS",
+      "url": "https://www.newtis.info/",
+      "note": "Repair and maintenance procedures. Select the series and model before following a procedure."
+    },
+    {
+      "id": "bmw-press-saloon-2005",
+      "title": "Specifications BMW 5 Series Saloon, valid from 2005",
+      "publisher": "BMW Group PressClub",
+      "url": "https://www.press.bmwgroup.com/africa-dom-easteurope/article/attachment/T0050535EN/74395",
+      "note": "Manufacturer press sheet, 12/2004, covering the 523i, 525i, 530i and 545i saloons. The text extraction is partly garbled, so values are taken only where the column is unambiguous."
+    },
+    {
+      "id": "wikipedia-n52",
+      "title": "BMW N52",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BMW_N52",
+      "note": "Secondary source for N52 bore, stroke, block materials and the electric coolant pump. Checked October 2026."
+    }
+  ]
+}

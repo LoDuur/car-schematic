@@ -1,0 +1,476 @@
+{
+  "components": [
+    {
+      "id": "front-brakes",
+      "systemId": "brakes",
+      "assemblyId": "wheel-brakes",
+      "name": {
+        "en": "Front brakes",
+        "lv": "Priekšējās bremzes",
+        "ru": "Передние тормоза"
+      },
+      "aliases": [
+        "brake disc",
+        "rotor",
+        "caliper",
+        "brake pads",
+        "тормозной диск",
+        "колодки",
+        "bremžu disks",
+        "kluči"
+      ],
+      "symptomIds": [
+        "brake-noise",
+        "brake-vibration"
+      ],
+      "function": {
+        "en": "Disc, caliper and pads that slow the front wheels. They do most of the braking work.",
+        "lv": "Disks, suports un kluči, kas bremzē priekšējos riteņus. Tie veic lielāko bremzēšanas darba daļu.",
+        "ru": "Диск, суппорт и колодки передних колёс. Выполняют основную часть торможения."
+      },
+      "location": {
+        "en": "Inside each front wheel.",
+        "lv": "Katrā priekšējā ritenī.",
+        "ru": "Внутри каждого переднего колеса."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "front-strut"
+        }
+      ],
+      "specs": [
+        {
+          "key": "disc-size",
+          "label": {
+            "en": "Disc size",
+            "lv": "Diska izmērs",
+            "ru": "Размер диска"
+          },
+          "value": "324 x 30 mm, vented",
+          "status": "unverified",
+          "sourceId": "bmw-press-saloon-2005",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B25",
+              "N52B30"
+            ]
+          },
+          "note": {
+            "en": "The press sheet columns are misaligned and a 2004 sheet gives 310 x 24 mm for the earlier 525i. Check the part number for your car.",
+            "lv": "Preses lapas kolonnas nesakrīt, un 2004. gada lapā agrākajam 525i norādīts 310 x 24 mm. Pārbaudiet sava auto detaļas numuru.",
+            "ru": "Колонки пресс-листа смещены, а лист 2004 года даёт 310 x 24 мм для раннего 525i. Проверьте номер детали для своей машины."
+          }
+        },
+        {
+          "key": "disc-size",
+          "label": {
+            "en": "Disc size",
+            "lv": "Diska izmērs",
+            "ru": "Размер диска"
+          },
+          "status": "missing",
+          "appliesWhen": {
+            "not": {
+              "axis": "engine",
+              "in": [
+                "N52B25",
+                "N52B30"
+              ]
+            }
+          }
+        },
+        {
+          "key": "min-thickness",
+          "label": {
+            "en": "Minimum disc thickness",
+            "lv": "Minimālais diska biezums",
+            "ru": "Минимальная толщина диска"
+          },
+          "status": "missing"
+        }
+      ],
+      "docs": [
+        {
+          "kind": "specification",
+          "title": {
+            "en": "Parts diagram: front brakes",
+            "lv": "Detaļu shēma: priekšējās bremzes",
+            "ru": "Схема деталей: передние тормоза"
+          },
+          "url": "https://www.realoem.com/",
+          "lang": "en",
+          "sourceId": "realoem"
+        }
+      ]
+    },
+    {
+      "id": "rear-brakes",
+      "systemId": "brakes",
+      "assemblyId": "wheel-brakes",
+      "name": {
+        "en": "Rear brakes",
+        "lv": "Aizmugurējās bremzes",
+        "ru": "Задние тормоза"
+      },
+      "aliases": [
+        "rear disc",
+        "rear caliper",
+        "parking brake",
+        "задние колодки",
+        "stāvbremze"
+      ],
+      "symptomIds": [
+        "brake-noise"
+      ],
+      "function": {
+        "en": "Disc, caliper and pads that slow the rear wheels.",
+        "lv": "Disks, suports un kluči, kas bremzē aizmugurējos riteņus.",
+        "ru": "Диск, суппорт и колодки задних колёс."
+      },
+      "location": {
+        "en": "Inside each rear wheel.",
+        "lv": "Katrā aizmugurējā ritenī.",
+        "ru": "Внутри каждого заднего колеса."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "rear-suspension"
+        }
+      ],
+      "specs": [
+        {
+          "key": "disc-size",
+          "label": {
+            "en": "Disc size",
+            "lv": "Diska izmērs",
+            "ru": "Размер диска"
+          },
+          "value": "320 x 20 mm, vented",
+          "status": "verified",
+          "sourceId": "bmw-press-saloon-2005",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B25",
+              "N52B30"
+            ]
+          }
+        },
+        {
+          "key": "disc-size",
+          "label": {
+            "en": "Disc size",
+            "lv": "Diska izmērs",
+            "ru": "Размер диска"
+          },
+          "status": "missing",
+          "appliesWhen": {
+            "not": {
+              "axis": "engine",
+              "in": [
+                "N52B25",
+                "N52B30"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "brake-booster",
+      "systemId": "brakes",
+      "assemblyId": "brake-hydraulics",
+      "name": {
+        "en": "Brake booster and master cylinder",
+        "lv": "Bremžu pastiprinātājs un galvenais cilindrs",
+        "ru": "Вакуумный усилитель и главный тормозной цилиндр"
+      },
+      "aliases": [
+        "master cylinder",
+        "servo",
+        "booster",
+        "ГТЦ",
+        "вакуумник"
+      ],
+      "function": {
+        "en": "Multiplies pedal force and turns it into hydraulic pressure for the brakes.",
+        "lv": "Pastiprina pedāļa spēku un pārvērš to hidrauliskā spiedienā bremzēm.",
+        "ru": "Усиливает усилие на педали и превращает его в давление тормозной жидкости."
+      },
+      "location": {
+        "en": "Driver's side of the firewall in the engine bay.",
+        "lv": "Vadītāja pusē pie motortelpas starpsienas.",
+        "ru": "Со стороны водителя на моторном щите."
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "dsc-unit"
+        }
+      ],
+      "specs": [
+        {
+          "key": "fluid",
+          "label": {
+            "en": "Brake fluid specification",
+            "lv": "Bremžu šķidruma specifikācija",
+            "ru": "Спецификация тормозной жидкости"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "dsc-unit",
+      "systemId": "brakes",
+      "assemblyId": "brake-hydraulics",
+      "name": {
+        "en": "DSC hydraulic unit",
+        "lv": "DSC hidrauliskais bloks",
+        "ru": "Гидроблок DSC"
+      },
+      "aliases": [
+        "abs",
+        "dsc",
+        "abs pump",
+        "stability control",
+        "абс",
+        "ABS bloks"
+      ],
+      "symptomIds": [
+        "abs-light"
+      ],
+      "function": {
+        "en": "Controls pressure at each wheel for ABS, traction control and stability control.",
+        "lv": "Regulē spiedienu katram ritenim ABS, vilces un stabilitātes kontrolei.",
+        "ru": "Регулирует давление на каждом колесе для ABS, антипробуксовочной системы и стабилизации."
+      },
+      "location": {
+        "en": "Engine bay, in the brake lines between master cylinder and wheels; exact side not confirmed.",
+        "lv": "Motortelpā, bremžu līnijās starp galveno cilindru un riteņiem; puse nav apstiprināta.",
+        "ru": "В моторном отсеке, между ГТЦ и колёсами; сторона не подтверждена."
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "front-brakes"
+        },
+        {
+          "type": "feeds",
+          "target": "rear-brakes"
+        }
+      ]
+    },
+    {
+      "id": "front-strut",
+      "systemId": "suspension",
+      "assemblyId": "front-axle",
+      "name": {
+        "en": "Front strut",
+        "lv": "Priekšējais amortizatora statnis",
+        "ru": "Передняя стойка амортизатора"
+      },
+      "aliases": [
+        "shock absorber",
+        "damper",
+        "front shock",
+        "spring",
+        "амортизатор",
+        "amortizators"
+      ],
+      "symptomIds": [
+        "suspension-knock"
+      ],
+      "function": {
+        "en": "Spring and damper that carry the front of the car and control wheel movement.",
+        "lv": "Atspere un amortizators, kas notur automašīnas priekšu un kontrolē riteņa kustību.",
+        "ru": "Пружина и амортизатор, держащие перед машины и гасящие колебания колеса."
+      },
+      "location": {
+        "en": "Above each front wheel, mounted to the strut tower.",
+        "lv": "Virs katra priekšējā riteņa, pie amortizatora balsta.",
+        "ru": "Над каждым передним колесом, на опоре стойки."
+      },
+      "specs": [
+        {
+          "key": "type",
+          "label": {
+            "en": "Damper type by option",
+            "lv": "Amortizatora tips pēc aprīkojuma",
+            "ru": "Тип амортизатора по опциям"
+          },
+          "status": "missing"
+        }
+      ],
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "front-subframe"
+        }
+      ]
+    },
+    {
+      "id": "rear-suspension",
+      "systemId": "suspension",
+      "assemblyId": "rear-axle",
+      "name": {
+        "en": "Rear springs and dampers",
+        "lv": "Aizmugurējās atsperes un amortizatori",
+        "ru": "Задние пружины и амортизаторы"
+      },
+      "aliases": [
+        "rear shock",
+        "rear spring",
+        "self levelling",
+        "задние амортизаторы"
+      ],
+      "function": {
+        "en": "Carry the rear of the car and control rear wheel movement.",
+        "lv": "Notur automašīnas aizmuguri un kontrolē aizmugurējo riteņu kustību.",
+        "ru": "Держат заднюю часть машины и гасят колебания задних колёс."
+      },
+      "location": {
+        "en": "Above the rear axle, at each rear wheel.",
+        "lv": "Virs aizmugurējās ass, pie katra aizmugurējā riteņa.",
+        "ru": "Над задней осью, у каждого заднего колеса."
+      },
+      "specs": [
+        {
+          "key": "levelling",
+          "label": {
+            "en": "Self-levelling air suspension",
+            "lv": "Pašlīmeņojošā pneimopiekare",
+            "ru": "Пневмоподвеска с автовыравниванием"
+          },
+          "status": "missing",
+          "appliesWhen": {
+            "axis": "body",
+            "in": [
+              "touring"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "steering-rack",
+      "systemId": "steering",
+      "assemblyId": "steering-gear",
+      "name": {
+        "en": "Steering rack",
+        "lv": "Stūres mehānisms",
+        "ru": "Рулевой механизм"
+      },
+      "aliases": [
+        "steering gear",
+        "rack and pinion",
+        "active steering",
+        "рейка",
+        "рулевая рейка",
+        "stūres reika"
+      ],
+      "symptomIds": [
+        "heavy-steering"
+      ],
+      "function": {
+        "en": "Turns steering wheel rotation into side-to-side movement of the front wheels.",
+        "lv": "Pārvērš stūres griešanos priekšējo riteņu kustībā uz sāniem.",
+        "ru": "Превращает вращение руля в поворот передних колёс."
+      },
+      "location": {
+        "en": "Front subframe, near the front axle line.",
+        "lv": "Priekšējā apakšrāmī, pie priekšējās ass līnijas.",
+        "ru": "На переднем подрамнике, у линии передней оси."
+      },
+      "relations": [
+        {
+          "type": "connects",
+          "target": "front-strut"
+        },
+        {
+          "type": "mounts",
+          "target": "front-subframe"
+        }
+      ],
+      "specs": [
+        {
+          "key": "active-steering",
+          "label": {
+            "en": "Active Steering fitted",
+            "lv": "Aktīvā stūrēšana",
+            "ru": "Активное рулевое управление"
+          },
+          "status": "missing"
+        },
+        {
+          "key": "ratio",
+          "label": {
+            "en": "Overall steering ratio",
+            "lv": "Kopējā stūres pārnesuma attiecība",
+            "ru": "Общее передаточное число рулевого управления"
+          },
+          "value": "13.7 : 1",
+          "status": "verified",
+          "sourceId": "bmw-press-saloon-2005",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B25",
+              "N52B30"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "power-steering-pump",
+      "systemId": "steering",
+      "assemblyId": "steering-gear",
+      "name": {
+        "en": "Power steering pump",
+        "lv": "Stūres pastiprinātāja sūknis",
+        "ru": "Насос гидроусилителя руля"
+      },
+      "aliases": [
+        "ps pump",
+        "hydraulic pump",
+        "насос гур",
+        "гур"
+      ],
+      "symptomIds": [
+        "heavy-steering",
+        "belt-noise"
+      ],
+      "function": {
+        "en": "Belt-driven pump that supplies hydraulic pressure for power steering.",
+        "lv": "Siksnas dzīts sūknis, kas nodrošina hidraulisko spiedienu stūres pastiprinātājam.",
+        "ru": "Насос с ременным приводом, создающий давление для гидроусилителя."
+      },
+      "location": {
+        "en": "Front of the engine, on the accessory belt.",
+        "lv": "Dzinēja priekšā, uz palīgagregātu siksnas.",
+        "ru": "Спереди двигателя, на ремне навесного оборудования."
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "steering-rack"
+        }
+      ],
+      "specs": [
+        {
+          "key": "fluid",
+          "label": {
+            "en": "Steering fluid specification",
+            "lv": "Stūres šķidruma specifikācija",
+            "ru": "Спецификация жидкости ГУР"
+          },
+          "status": "missing"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "car-schematic",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev -w server",
+    "dev:web": "npm run dev -w web",
+    "build": "npm run build -w web",
+    "test": "vitest run",
+    "typecheck": "tsc -p shared && tsc -p server && tsc -p web",
+    "validate:data": "tsx server/src/validateData.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^5.0.3"
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "components": [
+    {
+      "id": "radiator",
+      "systemId": "cooling",
+      "assemblyId": "radiator-module",
+      "name": {
+        "en": "Radiator",
+        "lv": "Radiators",
+        "ru": "Радиатор"
+      },
+      "aliases": [
+        "coolant radiator",
+        "радиатор охлаждения",
+        "dzesētājs"
+      ],
+      "symptomIds": [
+        "overheating",
+        "coolant-leak"
+      ],
+      "function": {
+        "en": "Releases engine heat from the coolant into the air flowing through the front of the car.",
+        "lv": "Nodod dzinēja siltumu no dzesēšanas šķidruma gaisam, kas plūst caur automašīnas priekšu.",
+        "ru": "Отдаёт тепло охлаждающей жидкости воздуху, проходящему через переднюю часть."
+      },
+      "location": {
+        "en": "Front of the engine bay, behind the grille.",
+        "lv": "Motortelpas priekšā, aiz restēm.",
+        "ru": "Спереди моторного отсека, за решёткой."
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "coolant-pump"
+        },
+        {
+          "type": "connects",
+          "target": "expansion-tank"
+        },
+        {
+          "type": "connects",
+          "target": "thermostat"
+        }
+      ],
+      "specs": [
+        {
+          "key": "coolant-type",
+          "label": {
+            "en": "Approved coolant",
+            "lv": "Apstiprināts dzesēšanas šķidrums",
+            "ru": "Допущенная охлаждающая жидкость"
+          },
+          "status": "missing"
+        },
+        {
+          "key": "coolant-capacity",
+          "label": {
+            "en": "Cooling system capacity incl. heating",
+            "lv": "Dzesēšanas sistēmas tilpums ar sildītāju",
+            "ru": "Объём системы охлаждения с отопителем"
+          },
+          "value": "10.0 (10.5 automatic)",
+          "unit": "L",
+          "status": "verified",
+          "sourceId": "bmw-press-saloon-2005",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B25",
+              "N52B30"
+            ]
+          },
+          "note": {
+            "en": "Bracketed value read as the automatic transmission figure.",
+            "lv": "Iekavās norādītā vērtība nolasīta kā automātiskās ātrumkārbas vērtība.",
+            "ru": "Значение в скобках прочитано как значение для АКПП."
+          }
+        },
+        {
+          "key": "coolant-capacity",
+          "label": {
+            "en": "Cooling system capacity incl. heating",
+            "lv": "Dzesēšanas sistēmas tilpums ar sildītāju",
+            "ru": "Объём системы охлаждения с отопителем"
+          },
+          "status": "missing",
+          "appliesWhen": {
+            "not": {
+              "axis": "engine",
+              "in": [
+                "N52B25",
+                "N52B30"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "coolant-pump",
+      "systemId": "cooling",
+      "assemblyId": "coolant-circuit",
+      "name": {
+        "en": "Coolant pump",
+        "lv": "Dzesēšanas šķidruma sūknis",
+        "ru": "Насос охлаждающей жидкости"
+      },
+      "aliases": [
+        "water pump",
+        "electric water pump",
+        "помпа",
+        "ūdens sūknis"
+      ],
+      "symptomIds": [
+        "overheating",
+        "engine-light"
+      ],
+      "function": {
+        "en": "Circulates coolant through the engine, radiator and heater.",
+        "lv": "Cirkulē dzesēšanas šķidrumu caur dzinēju, radiatoru un sildītāju.",
+        "ru": "Прокачивает жидкость через двигатель, радиатор и отопитель."
+      },
+      "location": {
+        "en": "Front of the engine.",
+        "lv": "Dzinēja priekšā.",
+        "ru": "Спереди двигателя."
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "engine-block"
+        },
+        {
+          "type": "connects",
+          "target": "thermostat"
+        }
+      ],
+      "specs": [
+        {
+          "key": "drive",
+          "label": {
+            "en": "Drive type",
+            "lv": "Piedziņas veids",
+            "ru": "Тип привода"
+          },
+          "value": "Electric",
+          "status": "verified",
+          "sourceId": "wikipedia-n52",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N52B25",
+              "N52B30"
+            ]
+          }
+        },
+        {
+          "key": "drive",
+          "label": {
+            "en": "Drive type",
+            "lv": "Piedziņas veids",
+            "ru": "Тип привода"
+          },
+          "value": "Electric",
+          "status": "unverified",
+          "appliesWhen": {
+            "axis": "engine",
+            "in": [
+              "N53B25",
+              "N53B30",
+              "N54B30"
+            ]
+          }
+        },
+        {
+          "key": "drive",
+          "label": {
+            "en": "Drive type",
+            "lv": "Piedziņas veids",
+            "ru": "Тип привода"
+          },
+          "status": "missing",
+          "appliesWhen": {
+            "not": {
+              "axis": "engine",
+              "in": [
+                "N52B25",
+                "N52B30",
+                "N53B25",
+                "N53B30",
+                "N54B30"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "thermostat",
+      "systemId": "cooling",
+      "assemblyId": "coolant-circuit",
+      "name": {
+        "en": "Thermostat",
+        "lv": "Termostats",
+        "ru": "Термостат"
+      },
+      "aliases": [
+        "coolant thermostat",
+        "термостат"
+      ],
+      "symptomIds": [
+        "overheating"
+      ],
+      "function": {
+        "en": "Keeps coolant away from the radiator until the engine is warm, then opens to hold operating temperature.",
+        "lv": "Neļauj šķidrumam iet caur radiatoru, līdz dzinējs uzsilst, tad atveras, lai uzturētu darba temperatūru.",
+        "ru": "Не пускает жидкость в радиатор до прогрева, затем открывается и держит рабочую температуру."
+      },
+      "location": {
+        "en": "Front of the engine, in the coolant line to the radiator.",
+        "lv": "Dzinēja priekšā, šķidruma līnijā uz radiatoru.",
+        "ru": "Спереди двигателя, в магистрали к радиатору."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "engine-block"
+        }
+      ],
+      "specs": [
+        {
+          "key": "opening-temperature",
+          "label": {
+            "en": "Opening temperature",
+            "lv": "Atvēršanās temperatūra",
+            "ru": "Температура открытия"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "expansion-tank",
+      "systemId": "cooling",
+      "assemblyId": "radiator-module",
+      "name": {
+        "en": "Expansion tank",
+        "lv": "Izplešanās tvertne",
+        "ru": "Расширительный бачок"
+      },
+      "aliases": [
+        "coolant reservoir",
+        "overflow tank",
+        "бачок",
+        "izplešanās trauks"
+      ],
+      "symptomIds": [
+        "coolant-leak"
+      ],
+      "function": {
+        "en": "Takes up coolant as it expands with heat and lets you check and top up the level.",
+        "lv": "Uzņem šķidrumu, kad tas izplešas no karstuma, un ļauj pārbaudīt un papildināt līmeni.",
+        "ru": "Принимает расширяющуюся жидкость и позволяет проверить и долить уровень."
+      },
+      "location": {
+        "en": "Engine bay, near the radiator.",
+        "lv": "Motortelpā, pie radiatora.",
+        "ru": "В моторном отсеке, возле радиатора."
+      },
+      "relations": [
+        {
+          "type": "connects",
+          "target": "radiator"
+        }
+      ]
+    },
+    {
+      "id": "electric-fan",
+      "systemId": "cooling",
+      "assemblyId": "radiator-module",
+      "name": {
+        "en": "Electric cooling fan",
+        "lv": "Elektriskais dzesēšanas ventilators",
+        "ru": "Электровентилятор охлаждения"
+      },
+      "aliases": [
+        "fan",
+        "radiator fan",
+        "auxiliary fan",
+        "вентилятор",
+        "ventilators"
+      ],
+      "symptomIds": [
+        "overheating"
+      ],
+      "function": {
+        "en": "Pulls air through the radiator when driving speed alone does not cool enough.",
+        "lv": "Velk gaisu caur radiatoru, kad ar braukšanas ātrumu vien nepietiek dzesēšanai.",
+        "ru": "Протягивает воздух через радиатор, когда скорости движения недостаточно для охлаждения."
+      },
+      "location": {
+        "en": "Directly behind the radiator.",
+        "lv": "Tieši aiz radiatora.",
+        "ru": "Сразу за радиатором."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "radiator"
+        }
+      ],
+      "specs": [
+        {
+          "key": "power",
+          "label": {
+            "en": "Motor power",
+            "lv": "Motora jauda",
+            "ru": "Мощность мотора"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "exhaust-manifold",
+      "systemId": "exhaust",
+      "assemblyId": "exhaust-piping",
+      "name": {
+        "en": "Exhaust manifold",
+        "lv": "Izplūdes kolektors",
+        "ru": "Выпускной коллектор"
+      },
+      "aliases": [
+        "headers",
+        "manifold",
+        "выпускной коллектор",
+        "izplūde"
+      ],
+      "function": {
+        "en": "Collects exhaust gas from each cylinder into one outlet.",
+        "lv": "Savāc izplūdes gāzes no visiem cilindriem vienā izejā.",
+        "ru": "Собирает выхлопные газы от цилиндров в один выход."
+      },
+      "location": {
+        "en": "Exhaust side of the cylinder head.",
+        "lv": "Cilindru galvas izplūdes pusē.",
+        "ru": "На выпускной стороне головки блока."
+      },
+      "relations": [
+        {
+          "type": "mounts",
+          "target": "cylinder-head"
+        },
+        {
+          "type": "feeds",
+          "target": "turbocharger"
+        },
+        {
+          "type": "feeds",
+          "target": "catalytic-converter"
+        }
+      ]
+    },
+    {
+      "id": "catalytic-converter",
+      "systemId": "exhaust",
+      "assemblyId": "aftertreatment",
+      "name": {
+        "en": "Catalytic converter",
+        "lv": "Katalizators",
+        "ru": "Каталитический нейтрализатор"
+      },
+      "aliases": [
+        "cat",
+        "catalyst",
+        "катализатор",
+        "katalizators"
+      ],
+      "symptomIds": [
+        "engine-light",
+        "low-power"
+      ],
+      "function": {
+        "en": "Converts harmful exhaust gases into less harmful ones.",
+        "lv": "Pārvērš kaitīgās izplūdes gāzes mazāk kaitīgās.",
+        "ru": "Превращает вредные компоненты выхлопа в менее вредные."
+      },
+      "location": {
+        "en": "In the exhaust, close to the engine and under the floor.",
+        "lv": "Izplūdes sistēmā, tuvu dzinējam un zem grīdas.",
+        "ru": "В выпуске, близко к двигателю и под днищем."
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "particulate-filter"
+        },
+        {
+          "type": "feeds",
+          "target": "exhaust-system"
+        }
+      ],
+      "specs": [
+        {
+          "key": "type",
+          "label": {
+            "en": "Catalyst type",
+            "lv": "Katalizatora tips",
+            "ru": "Тип катализатора"
+          },
+          "status": "missing"
+        }
+      ]
+    },
+    {
+      "id": "particulate-filter",
+      "systemId": "exhaust",
+      "assemblyId": "aftertreatment",
+      "name": {
+        "en": "Diesel particulate filter",
+        "lv": "Dīzeļa daļiņu filtrs",
+        "ru": "Сажевый фильтр"
+      },
+      "aliases": [
+        "dpf",
+        "soot filter",
+        "сажевый фильтр",
+        "DPF",
+        "sodrēju filtrs"
+      ],
+      "function": {
+        "en": "Traps soot from diesel exhaust and burns it off during regeneration.",
+        "lv": "Aiztur dīzeļa izplūdes sodrējus un sadedzina tos reģenerācijas laikā.",
+        "ru": "Задерживает сажу из выхлопа дизеля и выжигает её при регенерации."
+      },
+      "location": {
+        "en": "In the exhaust after the catalytic converter.",
+        "lv": "Izplūdes sistēmā aiz katalizatora.",
+        "ru": "В выпуске после катализатора."
+      },
+      "appliesWhen": {
+        "axis": "fuel",
+        "in": [
+          "diesel"
+        ]
+      },
+      "fitment": {
+        "status": "unverified",
+        "note": {
+          "en": "Fitment varies by market and year. No reliable fitment data yet.",
+          "lv": "Uzstādīšana atšķiras pēc tirgus un gada. Uzticamu datu vēl nav.",
+          "ru": "Наличие зависит от рынка и года. Надёжных данных пока нет."
+        }
+      },
+      "relations": [
+        {
+          "type": "feeds",
+          "target": "exhaust-system"
+        }
+      ]
+    },
+    {
+      "id": "oxygen-sensors",
+      "systemId": "exhaust",
+      "assemblyId": "aftertreatment",
+      "name": {
+        "en": "Oxygen sensors",
+        "lv": "Skābekļa sensori (lambda zondes)",
+        "ru": "Кислородные датчики (лямбда-зонды)"
+      },
+      "aliases": [
+        "lambda",
+        "o2 sensor",
+        "lambda sensor",
+        "лямбда",
+        "lambda zonde"
+      ],
+      "symptomIds": [
+        "engine-light"
+      ],
+      "function": {
+        "en": "Measure oxygen in the exhaust so the engine control unit can correct the air and fuel ratio and check the catalytic converter.",
+        "lv": "Mēra skābekli izplūdē, lai vadības bloks koriģētu gaisa un degvielas attiecību un pārbaudītu katalizatoru.",
+        "ru": "Измеряют кислород в выхлопе, чтобы блок управления корректировал смесь и проверял катализатор."
+      },
+      "location": {
+        "en": "In the exhaust before and after the catalytic converter.",
+        "lv": "Izplūdē pirms un pēc katalizatora.",
+        "ru": "В выпуске до и после катализатора."
+      },
+      "appliesWhen": {
+        "axis": "fuel",
+        "in": [
+          "petrol"
+        ]
+      },
+      "fitment": {
+        "status": "unverified",
+        "note": {
+          "en": "Diesel exhaust sensors are not modelled yet.",
+          "lv": "Dīzeļa izplūdes sensori vēl nav modelēti.",
+          "ru": "Датчики дизельного выпуска пока не смоделированы."
+        }
+      },
+      "relations": [
+        {
+          "type": "monitors",
+          "target": "catalytic-converter"
+        },
+        {
+          "type": "connects",
+          "target": "engine-control-unit"
+        }
+      ]
+    }
+  ]
+}

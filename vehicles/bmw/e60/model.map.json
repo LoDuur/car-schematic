@@ -1,0 +1,1641 @@
+{
+  "units": "m",
+  "coordinateNote": "Origin on the ground at the middle of the wheelbase. +x points forward, +y up and +z to the car's right (right-handed). The GLB is built by blender/build_e60.py in this frame. All positions are approximate reconstructions, not factory CAD data.",
+  "glb": {
+    "file": "e60-525i-n52.glb",
+    "title": "BMW E60 525i (N52B25) schematic model",
+    "author": "Car Schematic project, procedural Blender build",
+    "license": "Project asset",
+    "referenceConfig": {
+      "year": "2006",
+      "body": "sedan",
+      "model": "525i",
+      "engine": "N52B25",
+      "fuel": "petrol",
+      "transmission": "automatic-6",
+      "drivetrain": "rwd"
+    },
+    "description": "BMW 525i saloon (E60), 2006, N52B25 inline-six, 6-speed Steptronic automatic, rear-wheel drive, left-hand drive, 225/55 R16 tyres on 7J x 16 wheels. Overall dimensions, track, tyre size and brake disc sizes follow BMW press data. Component shapes and positions are reconstructed from those dimensions and general BMW drivetrain layout. They have not been checked against photographs, workshop diagrams or factory CAD data, so treat every position as approximate.",
+    "transform": {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": 1
+    }
+  },
+  "body": {
+    "profile": [
+      [
+        -2.52,
+        0.3
+      ],
+      [
+        -2.4,
+        0.2
+      ],
+      [
+        -1.815,
+        0.2
+      ],
+      [
+        -1.815,
+        0.33
+      ],
+      [
+        -1.802,
+        0.426
+      ],
+      [
+        -1.765,
+        0.515
+      ],
+      [
+        -1.707,
+        0.592
+      ],
+      [
+        -1.63,
+        0.65
+      ],
+      [
+        -1.541,
+        0.687
+      ],
+      [
+        -1.445,
+        0.7
+      ],
+      [
+        -1.349,
+        0.687
+      ],
+      [
+        -1.26,
+        0.65
+      ],
+      [
+        -1.183,
+        0.592
+      ],
+      [
+        -1.125,
+        0.515
+      ],
+      [
+        -1.088,
+        0.426
+      ],
+      [
+        -1.075,
+        0.33
+      ],
+      [
+        -1.075,
+        0.2
+      ],
+      [
+        1.075,
+        0.2
+      ],
+      [
+        1.075,
+        0.33
+      ],
+      [
+        1.088,
+        0.426
+      ],
+      [
+        1.125,
+        0.515
+      ],
+      [
+        1.183,
+        0.592
+      ],
+      [
+        1.26,
+        0.65
+      ],
+      [
+        1.349,
+        0.687
+      ],
+      [
+        1.445,
+        0.7
+      ],
+      [
+        1.541,
+        0.687
+      ],
+      [
+        1.63,
+        0.65
+      ],
+      [
+        1.707,
+        0.592
+      ],
+      [
+        1.765,
+        0.515
+      ],
+      [
+        1.802,
+        0.426
+      ],
+      [
+        1.815,
+        0.33
+      ],
+      [
+        1.815,
+        0.2
+      ],
+      [
+        2.2,
+        0.22
+      ],
+      [
+        2.3,
+        0.38
+      ],
+      [
+        2.31,
+        0.55
+      ],
+      [
+        2.22,
+        0.72
+      ],
+      [
+        1.7,
+        0.8
+      ],
+      [
+        1,
+        0.86
+      ],
+      [
+        0.75,
+        0.9
+      ],
+      [
+        0.05,
+        1.4
+      ],
+      [
+        -0.7,
+        1.45
+      ],
+      [
+        -1.15,
+        1.42
+      ],
+      [
+        -1.85,
+        1.06
+      ],
+      [
+        -2.35,
+        1.02
+      ],
+      [
+        -2.5,
+        0.95
+      ],
+      [
+        -2.55,
+        0.7
+      ],
+      [
+        -2.54,
+        0.45
+      ]
+    ],
+    "width": 1.85,
+    "wheels": [
+      {
+        "position": [
+          1.445,
+          0.33,
+          0.78
+        ],
+        "radius": 0.33,
+        "width": 0.225
+      },
+      {
+        "position": [
+          1.445,
+          0.33,
+          -0.78
+        ],
+        "radius": 0.33,
+        "width": 0.225
+      },
+      {
+        "position": [
+          -1.445,
+          0.33,
+          0.78
+        ],
+        "radius": 0.33,
+        "width": 0.225
+      },
+      {
+        "position": [
+          -1.445,
+          0.33,
+          -0.78
+        ],
+        "radius": 0.33,
+        "width": 0.225
+      }
+    ],
+    "annotations": [
+      {
+        "from": [
+          -1.444,
+          0,
+          1.15
+        ],
+        "to": [
+          1.444,
+          0,
+          1.15
+        ],
+        "label": {
+          "en": "Wheelbase 2,888 mm",
+          "lv": "Garenbāze 2 888 mm",
+          "ru": "Колёсная база 2 888 мм"
+        }
+      }
+    ]
+  },
+  "parts": {
+    "engine-block": {
+      "meshes": [
+        "engine-block"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.62,
+            0.36,
+            0.42
+          ],
+          "position": [
+            1.3,
+            0.5,
+            0
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0,
+        0
+      ]
+    },
+    "cylinder-head": {
+      "meshes": [
+        "cylinder-head"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.6,
+            0.14,
+            0.32
+          ],
+          "position": [
+            1.3,
+            0.76,
+            -0.03
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0.35,
+        0
+      ]
+    },
+    "valvetronic-motor": {
+      "meshes": [
+        "valvetronic-motor"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.035,
+          "length": 0.12,
+          "axis": "z",
+          "position": [
+            1,
+            0.86,
+            -0.12
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        -0.1,
+        0.55,
+        -0.1
+      ]
+    },
+    "vanos-solenoids": {
+      "meshes": [
+        "vanos-solenoids"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.025,
+          "length": 0.08,
+          "axis": "x",
+          "position": [
+            1.64,
+            0.8,
+            -0.08
+          ]
+        },
+        {
+          "type": "cylinder",
+          "radius": 0.025,
+          "length": 0.08,
+          "axis": "x",
+          "position": [
+            1.64,
+            0.8,
+            0.04
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.35,
+        0.4,
+        0
+      ]
+    },
+    "oil-filter-housing": {
+      "meshes": [
+        "oil-filter-housing"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.05,
+          "length": 0.16,
+          "axis": "y",
+          "position": [
+            1.55,
+            0.62,
+            -0.27
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.15,
+        0.1,
+        -0.35
+      ]
+    },
+    "oil-pan": {
+      "meshes": [
+        "oil-pan"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.58,
+            0.12,
+            0.38
+          ],
+          "position": [
+            1.3,
+            0.25,
+            0
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        -0.3,
+        0
+      ]
+    },
+    "crankshaft-sensor": {
+      "meshes": [
+        "crankshaft-sensor"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.018,
+          "length": 0.06,
+          "axis": "z",
+          "position": [
+            0.98,
+            0.38,
+            -0.22
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        -0.1,
+        -0.1,
+        -0.35
+      ]
+    },
+    "engine-control-unit": {
+      "meshes": [
+        "engine-control-unit"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.2,
+            0.06,
+            0.16
+          ],
+          "position": [
+            0.82,
+            0.82,
+            0.55
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0.3,
+        0.25
+      ]
+    },
+    "air-filter-housing": {
+      "meshes": [
+        "air-filter-housing"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.32,
+            0.18,
+            0.26
+          ],
+          "position": [
+            1.9,
+            0.74,
+            -0.38
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.3,
+        0.3,
+        -0.2
+      ]
+    },
+    "throttle-body": {
+      "meshes": [
+        "throttle-body"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.04,
+          "length": 0.07,
+          "axis": "x",
+          "position": [
+            1.68,
+            0.7,
+            -0.3
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.3,
+        0.2,
+        -0.25
+      ]
+    },
+    "intake-manifold": {
+      "meshes": [
+        "intake-manifold"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.56,
+            0.14,
+            0.14
+          ],
+          "position": [
+            1.3,
+            0.7,
+            -0.3
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0.15,
+        -0.4
+      ]
+    },
+    "turbocharger": {
+      "meshes": [
+        "turbocharger"
+      ],
+      "shapes": [
+        {
+          "type": "sphere",
+          "radius": 0.08,
+          "position": [
+            1.22,
+            0.55,
+            0.34
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0,
+        0.45
+      ]
+    },
+    "intercooler": {
+      "meshes": [
+        "intercooler"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.06,
+            0.18,
+            0.62
+          ],
+          "position": [
+            2.18,
+            0.36,
+            0
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.35,
+        -0.1,
+        0
+      ]
+    },
+    "fuel-tank": {
+      "meshes": [
+        "fuel-tank"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.55,
+            0.24,
+            1.2
+          ],
+          "position": [
+            -1,
+            0.32,
+            0
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        -0.35,
+        0
+      ]
+    },
+    "fuel-pump": {
+      "meshes": [
+        "fuel-pump"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.05,
+          "length": 0.18,
+          "axis": "y",
+          "position": [
+            -1,
+            0.36,
+            0.28
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0.35,
+        0.2
+      ]
+    },
+    "high-pressure-pump": {
+      "meshes": [
+        "high-pressure-pump"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.04,
+          "length": 0.1,
+          "axis": "x",
+          "position": [
+            1.08,
+            0.72,
+            -0.24
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        -0.15,
+        0.3,
+        -0.3
+      ]
+    },
+    "fuel-injectors": {
+      "meshes": [
+        "fuel-injectors"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.5,
+            0.03,
+            0.03
+          ],
+          "position": [
+            1.3,
+            0.79,
+            -0.19
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0.45,
+        -0.3
+      ]
+    },
+    "ignition-coils": {
+      "meshes": [
+        "ignition-coils"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.5,
+            0.05,
+            0.06
+          ],
+          "position": [
+            1.3,
+            0.86,
+            -0.02
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0.6,
+        0
+      ]
+    },
+    "spark-plugs": {
+      "meshes": [
+        "spark-plugs"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.5,
+            0.025,
+            0.02
+          ],
+          "position": [
+            1.3,
+            0.81,
+            -0.02
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0.48,
+        0
+      ]
+    },
+    "glow-plugs": {
+      "meshes": [
+        "glow-plugs"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.5,
+            0.025,
+            0.02
+          ],
+          "position": [
+            1.3,
+            0.73,
+            -0.18
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0.4,
+        -0.3
+      ]
+    },
+    "radiator": {
+      "meshes": [
+        "radiator"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.05,
+            0.42,
+            0.68
+          ],
+          "position": [
+            2.08,
+            0.58,
+            0
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.45,
+        0,
+        0
+      ]
+    },
+    "coolant-pump": {
+      "meshes": [
+        "coolant-pump"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.06,
+          "length": 0.08,
+          "axis": "x",
+          "position": [
+            1.66,
+            0.5,
+            0.06
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.35,
+        0,
+        0.1
+      ]
+    },
+    "thermostat": {
+      "meshes": [
+        "thermostat"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.035,
+          "length": 0.06,
+          "axis": "x",
+          "position": [
+            1.7,
+            0.62,
+            -0.1
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.35,
+        0.15,
+        -0.05
+      ]
+    },
+    "expansion-tank": {
+      "meshes": [
+        "expansion-tank"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.14,
+            0.16,
+            0.12
+          ],
+          "position": [
+            1.92,
+            0.8,
+            0.46
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.25,
+        0.25,
+        0.2
+      ]
+    },
+    "electric-fan": {
+      "meshes": [
+        "electric-fan"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.22,
+          "length": 0.08,
+          "axis": "x",
+          "position": [
+            1.98,
+            0.58,
+            0
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.25,
+        0,
+        0
+      ]
+    },
+    "exhaust-manifold": {
+      "meshes": [
+        "exhaust-manifold"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.5,
+            0.12,
+            0.1
+          ],
+          "position": [
+            1.3,
+            0.56,
+            0.27
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0,
+        0.4
+      ]
+    },
+    "catalytic-converter": {
+      "meshes": [
+        "catalytic-converter"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.07,
+          "length": 0.4,
+          "axis": "x",
+          "position": [
+            0.55,
+            0.24,
+            0.16
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        -0.25,
+        0.15
+      ]
+    },
+    "particulate-filter": {
+      "meshes": [
+        "particulate-filter"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.08,
+          "length": 0.35,
+          "axis": "x",
+          "position": [
+            0.05,
+            0.24,
+            0.16
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        -0.3,
+        0.15
+      ]
+    },
+    "oxygen-sensors": {
+      "meshes": [
+        "oxygen-sensors"
+      ],
+      "shapes": [
+        {
+          "type": "sphere",
+          "radius": 0.022,
+          "position": [
+            0.82,
+            0.27,
+            0.16
+          ]
+        },
+        {
+          "type": "sphere",
+          "radius": 0.022,
+          "position": [
+            0.3,
+            0.26,
+            0.16
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        -0.4,
+        0.25
+      ]
+    },
+    "transmission": {
+      "meshes": [
+        "transmission"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.75,
+            0.3,
+            0.32
+          ],
+          "position": [
+            0.55,
+            0.38,
+            0
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        -0.2,
+        -0.1,
+        0
+      ]
+    },
+    "clutch": {
+      "meshes": [
+        "clutch"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.13,
+          "length": 0.05,
+          "axis": "x",
+          "position": [
+            0.96,
+            0.42,
+            0
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        -0.05,
+        0.25,
+        0
+      ]
+    },
+    "transfer-case": {
+      "meshes": [
+        "transfer-case"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.2,
+            0.18,
+            0.2
+          ],
+          "position": [
+            0.08,
+            0.34,
+            0.08
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        -0.2,
+        -0.2,
+        0.15
+      ]
+    },
+    "propeller-shaft": {
+      "meshes": [
+        "propeller-shaft"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.035,
+          "length": 1.5,
+          "axis": "x",
+          "position": [
+            -0.7,
+            0.3,
+            0
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        -0.2,
+        -0.25,
+        0
+      ]
+    },
+    "rear-differential": {
+      "meshes": [
+        "rear-differential"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.26,
+            0.22,
+            0.3
+          ],
+          "position": [
+            -1.445,
+            0.33,
+            0
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        -0.3,
+        0,
+        0
+      ]
+    },
+    "front-differential": {
+      "meshes": [
+        "front-differential"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.18,
+            0.16,
+            0.18
+          ],
+          "position": [
+            1.3,
+            0.28,
+            0.22
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        -0.25,
+        0.2
+      ]
+    },
+    "front-brakes": {
+      "meshes": [
+        "front-brakes"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.17,
+          "length": 0.03,
+          "axis": "z",
+          "position": [
+            1.445,
+            0.33,
+            -0.66
+          ]
+        },
+        {
+          "type": "cylinder",
+          "radius": 0.17,
+          "length": 0.03,
+          "axis": "z",
+          "position": [
+            1.445,
+            0.33,
+            0.66
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0,
+        -0.3
+      ]
+    },
+    "rear-brakes": {
+      "meshes": [
+        "rear-brakes"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.16,
+          "length": 0.03,
+          "axis": "z",
+          "position": [
+            -1.445,
+            0.33,
+            -0.66
+          ]
+        },
+        {
+          "type": "cylinder",
+          "radius": 0.16,
+          "length": 0.03,
+          "axis": "z",
+          "position": [
+            -1.445,
+            0.33,
+            0.66
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0,
+        -0.3
+      ]
+    },
+    "brake-booster": {
+      "meshes": [
+        "brake-booster"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.12,
+          "length": 0.16,
+          "axis": "x",
+          "position": [
+            0.86,
+            0.84,
+            -0.45
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.1,
+        0.35,
+        -0.2
+      ]
+    },
+    "dsc-unit": {
+      "meshes": [
+        "dsc-unit"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.14,
+            0.1,
+            0.12
+          ],
+          "position": [
+            1.72,
+            0.64,
+            -0.56
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.25,
+        0.3,
+        -0.2
+      ]
+    },
+    "front-strut": {
+      "meshes": [
+        "front-strut"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.05,
+          "length": 0.45,
+          "axis": "y",
+          "position": [
+            1.445,
+            0.66,
+            -0.6
+          ]
+        },
+        {
+          "type": "cylinder",
+          "radius": 0.05,
+          "length": 0.45,
+          "axis": "y",
+          "position": [
+            1.445,
+            0.66,
+            0.6
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0.3,
+        -0.25
+      ]
+    },
+    "rear-suspension": {
+      "meshes": [
+        "rear-suspension"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.05,
+          "length": 0.36,
+          "axis": "y",
+          "position": [
+            -1.445,
+            0.56,
+            -0.58
+          ]
+        },
+        {
+          "type": "cylinder",
+          "radius": 0.05,
+          "length": 0.36,
+          "axis": "y",
+          "position": [
+            -1.445,
+            0.56,
+            0.58
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0.3,
+        -0.25
+      ]
+    },
+    "steering-rack": {
+      "meshes": [
+        "steering-rack"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.035,
+          "length": 0.85,
+          "axis": "z",
+          "position": [
+            1.6,
+            0.32,
+            0
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.3,
+        -0.15,
+        0
+      ]
+    },
+    "power-steering-pump": {
+      "meshes": [
+        "power-steering-pump"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.05,
+          "length": 0.1,
+          "axis": "x",
+          "position": [
+            1.62,
+            0.56,
+            0.2
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.35,
+        0.1,
+        0.2
+      ]
+    },
+    "battery": {
+      "meshes": [
+        "battery"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.3,
+            0.19,
+            0.18
+          ],
+          "position": [
+            -2.12,
+            0.5,
+            0.55
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        -0.2,
+        0.3,
+        0.2
+      ]
+    },
+    "battery-sensor": {
+      "meshes": [
+        "battery-sensor"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.05,
+            0.03,
+            0.04
+          ],
+          "position": [
+            -2.02,
+            0.61,
+            0.48
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        -0.1,
+        0.45,
+        0.2
+      ]
+    },
+    "alternator": {
+      "meshes": [
+        "alternator"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.07,
+          "length": 0.14,
+          "axis": "x",
+          "position": [
+            1.62,
+            0.6,
+            -0.25
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0.3,
+        0.2,
+        -0.25
+      ]
+    },
+    "starter": {
+      "meshes": [
+        "starter"
+      ],
+      "shapes": [
+        {
+          "type": "cylinder",
+          "radius": 0.05,
+          "length": 0.18,
+          "axis": "x",
+          "position": [
+            0.94,
+            0.45,
+            -0.25
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        -0.1,
+        0,
+        -0.35
+      ]
+    },
+    "car-access-system": {
+      "meshes": [
+        "car-access-system"
+      ],
+      "shapes": [
+        {
+          "type": "box",
+          "size": [
+            0.12,
+            0.04,
+            0.1
+          ],
+          "position": [
+            0.38,
+            0.86,
+            -0.32
+          ]
+        }
+      ],
+      "placementStatus": "approximate",
+      "explode": [
+        0,
+        0.35,
+        -0.2
+      ]
+    },
+    "accessory-belt-drive": {
+      "meshes": [
+        "accessory-belt-drive"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    },
+    "engine-mounts": {
+      "meshes": [
+        "engine-mounts"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    },
+    "fuel-lines": {
+      "meshes": [
+        "fuel-lines"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    },
+    "cooling-hoses": {
+      "meshes": [
+        "cooling-hoses"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    },
+    "exhaust-system": {
+      "meshes": [
+        "exhaust-system"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    },
+    "rear-drive-shafts": {
+      "meshes": [
+        "rear-drive-shafts"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    },
+    "wheels-and-tyres": {
+      "meshes": [
+        "wheels-and-tyres"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    },
+    "front-subframe": {
+      "meshes": [
+        "front-subframe"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    },
+    "front-control-arms": {
+      "meshes": [
+        "front-control-arms"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    },
+    "front-anti-roll-bar": {
+      "meshes": [
+        "front-anti-roll-bar"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    },
+    "rear-subframe": {
+      "meshes": [
+        "rear-subframe"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    },
+    "rear-control-arms": {
+      "meshes": [
+        "rear-control-arms"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    },
+    "rear-anti-roll-bar": {
+      "meshes": [
+        "rear-anti-roll-bar"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    },
+    "steering-column": {
+      "meshes": [
+        "steering-column"
+      ],
+      "shapes": [],
+      "placementStatus": "approximate"
+    }
+  }
+}

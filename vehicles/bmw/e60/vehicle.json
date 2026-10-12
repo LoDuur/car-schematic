@@ -1,0 +1,1363 @@
+{
+  "id": "bmw-e60",
+  "make": "BMW",
+  "model": "5 Series",
+  "generation": "E60 / E61",
+  "name": "BMW 5 Series (E60 / E61)",
+  "summary": {
+    "en": "Fifth-generation BMW 5 Series, built 2003–2010 as the E60 saloon and E61 Touring.",
+    "lv": "Piektās paaudzes BMW 5. sērija, ražota 2003.–2010. gadā kā E60 sedans un E61 Touring.",
+    "ru": "Пятое поколение BMW 5 серии, выпускалось в 2003–2010 годах: седан E60 и универсал E61 Touring."
+  },
+  "axes": [
+    {
+      "id": "year",
+      "label": {
+        "en": "Production year",
+        "lv": "Ražošanas gads",
+        "ru": "Год выпуска"
+      },
+      "options": [
+        {
+          "id": "2003",
+          "label": "2003"
+        },
+        {
+          "id": "2004",
+          "label": "2004"
+        },
+        {
+          "id": "2005",
+          "label": "2005"
+        },
+        {
+          "id": "2006",
+          "label": "2006"
+        },
+        {
+          "id": "2007",
+          "label": "2007"
+        },
+        {
+          "id": "2008",
+          "label": "2008"
+        },
+        {
+          "id": "2009",
+          "label": "2009"
+        },
+        {
+          "id": "2010",
+          "label": "2010"
+        }
+      ]
+    },
+    {
+      "id": "body",
+      "label": {
+        "en": "Body",
+        "lv": "Virsbūve",
+        "ru": "Кузов"
+      },
+      "options": [
+        {
+          "id": "sedan",
+          "label": {
+            "en": "Saloon (E60)",
+            "lv": "Sedans (E60)",
+            "ru": "Седан (E60)"
+          }
+        },
+        {
+          "id": "touring",
+          "label": {
+            "en": "Touring (E61)",
+            "lv": "Universālis (E61)",
+            "ru": "Универсал (E61)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "label": {
+        "en": "Model",
+        "lv": "Modelis",
+        "ru": "Модель"
+      },
+      "options": [
+        {
+          "id": "520i",
+          "label": "520i",
+          "note": {
+            "en": "The source gives no years for the N43B20 version. 2007–2010 is assumed and needs confirmation.",
+            "lv": "Avots nenorāda N43B20 versijas gadus. Pieņemts 2007.–2010., nepieciešams apstiprinājums.",
+            "ru": "Источник не указывает годы версии N43B20. Предполагается 2007–2010, требуется подтверждение."
+          }
+        },
+        {
+          "id": "523i",
+          "label": "523i"
+        },
+        {
+          "id": "525i",
+          "label": "525i"
+        },
+        {
+          "id": "528i",
+          "label": "528i"
+        },
+        {
+          "id": "530i",
+          "label": "530i"
+        },
+        {
+          "id": "535i",
+          "label": "535i"
+        },
+        {
+          "id": "540i",
+          "label": "540i"
+        },
+        {
+          "id": "545i",
+          "label": "545i"
+        },
+        {
+          "id": "550i",
+          "label": "550i"
+        },
+        {
+          "id": "m5",
+          "label": "M5"
+        },
+        {
+          "id": "520d",
+          "label": "520d"
+        },
+        {
+          "id": "525d",
+          "label": "525d"
+        },
+        {
+          "id": "530d",
+          "label": "530d",
+          "note": {
+            "en": "The source does not name the 2007–2010 530d engine code. M57D30TÜ2 is assumed and needs confirmation.",
+            "lv": "Avots nenorāda 2007.–2010. gada 530d dzinēja kodu. Pieņemts M57D30TÜ2, nepieciešams apstiprinājums.",
+            "ru": "Источник не указывает код двигателя 530d 2007–2010 годов. Предполагается M57D30TÜ2, требуется подтверждение."
+          }
+        },
+        {
+          "id": "535d",
+          "label": "535d"
+        }
+      ]
+    },
+    {
+      "id": "engine",
+      "label": {
+        "en": "Engine code",
+        "lv": "Dzinēja kods",
+        "ru": "Код двигателя"
+      },
+      "options": [
+        {
+          "id": "M54B22",
+          "label": "M54B22",
+          "note": "I6, 2,171 cc"
+        },
+        {
+          "id": "M54B25",
+          "label": "M54B25",
+          "note": "I6, 2,494 cc"
+        },
+        {
+          "id": "M54B30",
+          "label": "M54B30",
+          "note": "I6, 2,979 cc"
+        },
+        {
+          "id": "N46B20",
+          "label": "N46B20",
+          "note": "I4, 1,995 cc"
+        },
+        {
+          "id": "N43B20",
+          "label": "N43B20",
+          "note": "I4, 1,995 cc"
+        },
+        {
+          "id": "N52B25",
+          "label": "N52B25",
+          "note": "I6, 2,497 cc"
+        },
+        {
+          "id": "N52B30",
+          "label": "N52B30",
+          "note": "I6, 2,996 cc"
+        },
+        {
+          "id": "N53B25",
+          "label": "N53B25",
+          "note": "I6, 2,497 cc"
+        },
+        {
+          "id": "N53B30",
+          "label": "N53B30",
+          "note": "I6, 2,996 cc"
+        },
+        {
+          "id": "N54B30",
+          "label": "N54B30",
+          "note": "I6 twin-turbo, 2,979 cc"
+        },
+        {
+          "id": "N62B40",
+          "label": "N62B40",
+          "note": "V8, 4,000 cc"
+        },
+        {
+          "id": "N62B44",
+          "label": "N62B44",
+          "note": "V8, 4,398 cc"
+        },
+        {
+          "id": "N62B48",
+          "label": "N62B48",
+          "note": "V8, 4,799 cc"
+        },
+        {
+          "id": "S85B50",
+          "label": "S85B50",
+          "note": "V10, 4,999 cc"
+        },
+        {
+          "id": "M47TU2D20",
+          "label": "M47TÜ2D20",
+          "note": "I4 turbo, 1,995 cc"
+        },
+        {
+          "id": "N47D20",
+          "label": "N47D20",
+          "note": "I4 turbo, 1,995 cc"
+        },
+        {
+          "id": "M57D25TU",
+          "label": "M57D25TÜ",
+          "note": "I6 turbo, 2,497 cc"
+        },
+        {
+          "id": "M57D30TU",
+          "label": "M57D30TÜ",
+          "note": "I6 turbo, 2,993 cc"
+        },
+        {
+          "id": "M57D30TU2",
+          "label": "M57D30TÜ2",
+          "note": "I6 turbo, 2,993 cc"
+        },
+        {
+          "id": "M57D30TUTOP",
+          "label": "M57D30TÜ TOP",
+          "note": "I6 turbo, 2,993 cc"
+        },
+        {
+          "id": "M57D30TU2TOP",
+          "label": "M57D30TÜ2 TOP",
+          "note": "I6 turbo, 2,993 cc"
+        }
+      ]
+    },
+    {
+      "id": "fuel",
+      "label": {
+        "en": "Fuel",
+        "lv": "Degviela",
+        "ru": "Топливо"
+      },
+      "options": [
+        {
+          "id": "petrol",
+          "label": {
+            "en": "Petrol",
+            "lv": "Benzīns",
+            "ru": "Бензин"
+          }
+        },
+        {
+          "id": "diesel",
+          "label": {
+            "en": "Diesel",
+            "lv": "Dīzelis",
+            "ru": "Дизель"
+          }
+        }
+      ]
+    },
+    {
+      "id": "transmission",
+      "label": {
+        "en": "Transmission",
+        "lv": "Ātrumkārba",
+        "ru": "Коробка передач"
+      },
+      "options": [
+        {
+          "id": "manual-6",
+          "label": {
+            "en": "6-speed manual",
+            "lv": "6 pakāpju manuālā",
+            "ru": "6-ступенчатая механическая"
+          }
+        },
+        {
+          "id": "automatic-6",
+          "label": {
+            "en": "6-speed automatic (ZF 6HP)",
+            "lv": "6 pakāpju automātiskā (ZF 6HP)",
+            "ru": "6-ступенчатая автоматическая (ZF 6HP)"
+          }
+        },
+        {
+          "id": "smg-6",
+          "label": {
+            "en": "6-speed SMG II",
+            "lv": "6 pakāpju SMG II",
+            "ru": "6-ступенчатая SMG II"
+          }
+        },
+        {
+          "id": "smg-7",
+          "label": {
+            "en": "7-speed SMG III",
+            "lv": "7 pakāpju SMG III",
+            "ru": "7-ступенчатая SMG III"
+          }
+        }
+      ]
+    },
+    {
+      "id": "drivetrain",
+      "label": {
+        "en": "Drivetrain",
+        "lv": "Piedziņa",
+        "ru": "Привод"
+      },
+      "options": [
+        {
+          "id": "rwd",
+          "label": {
+            "en": "Rear-wheel drive",
+            "lv": "Aizmugurējo riteņu piedziņa",
+            "ru": "Задний привод"
+          }
+        },
+        {
+          "id": "xdrive",
+          "label": {
+            "en": "All-wheel drive (xDrive)",
+            "lv": "Pilnpiedziņa (xDrive)",
+            "ru": "Полный привод (xDrive)"
+          }
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "id": "model-520i-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "520i"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "M54B22"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N46B20"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N43B20"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The 520i was built only with these engines in these years.",
+        "lv": "520i tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "520i выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "model-523i-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "523i"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B25"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N53B25"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The 523i was built only with these engines in these years.",
+        "lv": "523i tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "523i выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "model-525i-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "525i"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "M54B25"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B25"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N53B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The 525i was built only with these engines in these years.",
+        "lv": "525i tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "525i выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "model-528i-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "528i"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The 528i was built only with these engines in these years.",
+        "lv": "528i tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "528i выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "model-530i-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "530i"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "M54B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N52B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N53B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The 530i was built only with these engines in these years.",
+        "lv": "530i tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "530i выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "model-535i-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "535i"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N54B30"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The 535i was built only with these engines in these years.",
+        "lv": "535i tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "535i выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "model-540i-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "540i"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N62B40"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The 540i was built only with these engines in these years.",
+        "lv": "540i tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "540i выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "model-545i-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "545i"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N62B44"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The 545i was built only with these engines in these years.",
+        "lv": "545i tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "545i выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "model-550i-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "550i"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N62B48"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The 550i was built only with these engines in these years.",
+        "lv": "550i tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "550i выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "model-m5-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "m5"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "S85B50"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The M5 was built only with these engines in these years.",
+        "lv": "M5 tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "M5 выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "model-520d-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "520d"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "M47TU2D20"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "N47D20"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The 520d was built only with these engines in these years.",
+        "lv": "520d tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "520d выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "model-525d-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "525d"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D25TU"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2004",
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU2"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The 525d was built only with these engines in these years.",
+        "lv": "525d tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "525d выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "model-530d-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "530d"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2003",
+                  "2004",
+                  "2005"
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU2"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU2"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The 530d was built only with these engines in these years.",
+        "lv": "530d tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "530d выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "model-535d-engine-years",
+      "when": {
+        "axis": "model",
+        "in": [
+          "535d"
+        ]
+      },
+      "require": {
+        "any": [
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TUTOP"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2004",
+                  "2005",
+                  "2006",
+                  "2007"
+                ]
+              }
+            ]
+          },
+          {
+            "all": [
+              {
+                "axis": "engine",
+                "in": [
+                  "M57D30TU2TOP"
+                ]
+              },
+              {
+                "axis": "year",
+                "in": [
+                  "2007",
+                  "2008",
+                  "2009",
+                  "2010"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "reason": {
+        "en": "The 535d was built only with these engines in these years.",
+        "lv": "535d tika ražots tikai ar šiem dzinējiem šajos gados.",
+        "ru": "535d выпускался только с этими двигателями в эти годы."
+      }
+    },
+    {
+      "id": "petrol-engines",
+      "when": {
+        "axis": "fuel",
+        "in": [
+          "petrol"
+        ]
+      },
+      "require": {
+        "axis": "engine",
+        "in": [
+          "M54B22",
+          "M54B25",
+          "M54B30",
+          "N46B20",
+          "N43B20",
+          "N52B25",
+          "N52B30",
+          "N53B25",
+          "N53B30",
+          "N54B30",
+          "N62B40",
+          "N62B44",
+          "N62B48",
+          "S85B50"
+        ]
+      },
+      "reason": {
+        "en": "Petrol needs a petrol engine.",
+        "lv": "Benzīnam vajag benzīna dzinēju.",
+        "ru": "Бензин требует бензинового двигателя."
+      }
+    },
+    {
+      "id": "diesel-engines",
+      "when": {
+        "axis": "fuel",
+        "in": [
+          "diesel"
+        ]
+      },
+      "require": {
+        "axis": "engine",
+        "in": [
+          "M47TU2D20",
+          "N47D20",
+          "M57D25TU",
+          "M57D30TU",
+          "M57D30TU2",
+          "M57D30TUTOP",
+          "M57D30TU2TOP"
+        ]
+      },
+      "reason": {
+        "en": "Diesel needs a diesel engine.",
+        "lv": "Dīzelim vajag dīzeļdzinēju.",
+        "ru": "Дизель требует дизельного двигателя."
+      }
+    },
+    {
+      "id": "touring-years",
+      "when": {
+        "axis": "body",
+        "in": [
+          "touring"
+        ]
+      },
+      "require": {
+        "axis": "year",
+        "in": [
+          "2004",
+          "2005",
+          "2006",
+          "2007",
+          "2008",
+          "2009",
+          "2010"
+        ]
+      },
+      "reason": {
+        "en": "The E61 Touring was built from 2004.",
+        "lv": "E61 Touring ražots no 2004. gada.",
+        "ru": "E61 Touring выпускался с 2004 года."
+      }
+    },
+    {
+      "id": "smg-iii-m5-only",
+      "when": {
+        "axis": "transmission",
+        "in": [
+          "smg-7"
+        ]
+      },
+      "require": {
+        "axis": "model",
+        "in": [
+          "m5"
+        ]
+      },
+      "reason": {
+        "en": "The 7-speed SMG III was fitted to the M5 only.",
+        "lv": "7 pakāpju SMG III bija tikai M5.",
+        "ru": "7-ступенчатая SMG III ставилась только на M5."
+      }
+    },
+    {
+      "id": "m5-transmissions",
+      "when": {
+        "axis": "model",
+        "in": [
+          "m5"
+        ]
+      },
+      "require": {
+        "axis": "transmission",
+        "in": [
+          "smg-7",
+          "manual-6"
+        ]
+      },
+      "reason": {
+        "en": "The M5 used SMG III, or a 6-speed manual in some markets.",
+        "lv": "M5 bija SMG III vai dažos tirgos 6 pakāpju manuālā.",
+        "ru": "M5 комплектовался SMG III или, на некоторых рынках, 6-ступенчатой механикой."
+      }
+    },
+    {
+      "id": "m5-rear-wheel-drive",
+      "when": {
+        "axis": "model",
+        "in": [
+          "m5"
+        ]
+      },
+      "require": {
+        "axis": "drivetrain",
+        "in": [
+          "rwd"
+        ]
+      },
+      "reason": {
+        "en": "The M5 was rear-wheel drive only.",
+        "lv": "M5 bija tikai ar aizmugurējo piedziņu.",
+        "ru": "M5 был только заднеприводным."
+      }
+    }
+  ],
+  "defaultConfig": {
+    "year": "2006",
+    "body": "sedan",
+    "model": "525i",
+    "engine": "N52B25",
+    "fuel": "petrol",
+    "transmission": "automatic-6",
+    "drivetrain": "rwd"
+  },
+  "summaryAxes": [
+    "year",
+    "model",
+    "engine"
+  ],
+  "facts": [
+    {
+      "label": {
+        "en": "Length (saloon)",
+        "lv": "Garums (sedans)",
+        "ru": "Длина (седан)"
+      },
+      "value": "4,841",
+      "unit": "mm",
+      "status": "verified",
+      "sourceId": "bmw-press-saloon-2005"
+    },
+    {
+      "label": {
+        "en": "Width",
+        "lv": "Platums",
+        "ru": "Ширина"
+      },
+      "value": "1,846",
+      "unit": "mm",
+      "status": "verified",
+      "sourceId": "bmw-press-saloon-2005"
+    },
+    {
+      "label": {
+        "en": "Height (saloon, unladen)",
+        "lv": "Augstums (sedans, bez slodzes)",
+        "ru": "Высота (седан, без нагрузки)"
+      },
+      "value": "1,468",
+      "unit": "mm",
+      "status": "verified",
+      "sourceId": "bmw-press-saloon-2005"
+    },
+    {
+      "label": {
+        "en": "Wheelbase (saloon)",
+        "lv": "Garenbāze (sedans)",
+        "ru": "Колёсная база (седан)"
+      },
+      "value": "2,888",
+      "unit": "mm",
+      "status": "verified",
+      "sourceId": "bmw-press-saloon-2005"
+    },
+    {
+      "label": {
+        "en": "Track front / rear",
+        "lv": "Riteņu bāze priekšā / aizmugurē",
+        "ru": "Колея спереди / сзади"
+      },
+      "value": "1,558 / 1,582",
+      "unit": "mm",
+      "status": "verified",
+      "sourceId": "bmw-press-saloon-2005"
+    },
+    {
+      "label": {
+        "en": "Turning circle",
+        "lv": "Apgriešanās diametrs",
+        "ru": "Диаметр разворота"
+      },
+      "value": "11.44",
+      "unit": "m",
+      "status": "verified",
+      "sourceId": "bmw-press-saloon-2005"
+    },
+    {
+      "label": {
+        "en": "xDrive availability by engine",
+        "lv": "xDrive pieejamība pēc dzinēja",
+        "ru": "Доступность xDrive по двигателям"
+      },
+      "status": "missing"
+    },
+    {
+      "label": {
+        "en": "Engine availability by body style",
+        "lv": "Dzinēju pieejamība pēc virsbūves",
+        "ru": "Доступность двигателей по типу кузова"
+      },
+      "status": "missing"
+    },
+    {
+      "label": {
+        "en": "Transmission availability by engine",
+        "lv": "Ātrumkārbu pieejamība pēc dzinēja",
+        "ru": "Доступность КПП по двигателям"
+      },
+      "status": "missing"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+server/.env
+.DS_Store
+blender/previews/
+*.blend
+*.blend1
