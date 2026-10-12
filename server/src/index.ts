@@ -131,6 +131,10 @@ app.all("/api/*", (context) => context.json({ error: "not_found" }, 404));
 if (existsSync(path.join(webDistDirectory, "index.html"))) {
   const webDistRoot = path.relative(process.cwd(), webDistDirectory);
   app.use("*", serveStatic({ root: webDistRoot }));
+  app.use("*", async (context, next) => {
+    if (path.extname(context.req.path)) return context.notFound();
+    await next();
+  });
   app.get("*", serveStatic({ root: webDistRoot, path: "index.html" }));
 }
 
